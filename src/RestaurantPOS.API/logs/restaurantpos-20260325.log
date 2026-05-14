@@ -1,0 +1,1177 @@
+2026-03-25 04:28:37.490 +01:00 [INF] Executed DbCommand (116ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-25 04:28:37.812 +01:00 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-25 04:28:37.839 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-25 04:28:37.844 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-25 04:28:37.910 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-25 04:28:37.995 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-25 04:28:38.827 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [PaymentMethods] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-25 04:28:38.870 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-25 04:28:38.892 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TableZones] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-25 04:28:38.940 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-25 04:28:38.959 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [CashRegisters] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-25 04:28:38.963 +01:00 [INF] Database seeded successfully.
+2026-03-25 04:28:39.664 +01:00 [INF] User profile is available. Using 'C:\Users\dilio\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-25 04:28:40.230 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-03-25 04:28:40.230 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/ - null null
+2026-03-25 04:28:40.460 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:28:40.494 +01:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 36.2242 ms
+2026-03-25 04:28:40.531 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 04:28:40.534 +01:00 [INF] Hosting environment: Development
+2026-03-25 04:28:40.535 +01:00 [INF] Content root path: C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.API
+2026-03-25 04:28:40.584 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-03-25 04:28:40.584 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 377.0487ms
+2026-03-25 04:28:40.590 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:28:40.836 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-25 04:28:40.889 +01:00 [INF] Executing RedirectResult, redirecting to /swagger/index.html.
+2026-03-25 04:28:40.890 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-25 04:28:40.891 +01:00 [INF] HTTP GET / responded 302 in 71.6166 ms
+2026-03-25 04:28:40.917 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/ - 302 null null 713.0477ms
+2026-03-25 04:28:40.918 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/swagger/index.html - null null
+2026-03-25 04:28:41.125 +01:00 [INF] Executing endpoint '/hubs/orders/negotiate'
+2026-03-25 04:28:41.160 +01:00 [INF] Executed endpoint '/hubs/orders/negotiate'
+2026-03-25 04:28:41.160 +01:00 [INF] HTTP POST /hubs/orders/negotiate responded 200 in 571.1542 ms
+2026-03-25 04:28:41.162 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 200 316 application/json 579.2655ms
+2026-03-25 04:28:41.185 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44374/hubs/orders?id=C4YRSVllzj6T9k2hDVeWTw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJBZG1pbmlzdHJhZG9yIFNpc3RlbWEiLCJqdGkiOiI5Njc4MmRiOS1iMTA1LTQ4MzMtYjk0Zi00MWZmMThkMjRiYzUiLCJleHAiOjE3NzQ0MzQ5OTUsImlzcyI6IlJlc3RhdXJhbnRQT1MuQVBJIiwiYXVkIjoiUmVzdGF1cmFudFBPUy5DbGllbnQifQ.vQB8PLYPexE9rB3EMC_WnlF3TkC7obl6HTTQaHmbDG8 - null null
+2026-03-25 04:28:41.186 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:28:41.187 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/swagger/index.html - 200 null text/html;charset=utf-8 269.1616ms
+2026-03-25 04:28:41.203 +01:00 [INF] Executing endpoint '/hubs/orders'
+2026-03-25 04:28:41.229 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 04:28:41.237 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/_vs/browserLink - null null
+2026-03-25 04:28:41.241 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 12.0023ms
+2026-03-25 04:28:41.333 +01:00 [INF] Client connected: lWBuXMReTQA1yh9T9h6nyQ
+2026-03-25 04:28:41.423 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/_vs/browserLink - 200 null text/javascript; charset=UTF-8 186.0931ms
+2026-03-25 04:28:41.637 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/swagger/v1/swagger.json - null null
+2026-03-25 04:28:42.308 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 670.7998ms
+2026-03-25 04:29:08.446 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:29:08.446 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-03-25 04:29:08.450 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:08.450 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:08.454 +01:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 2.0179 ms
+2026-03-25 04:29:08.454 +01:00 [INF] HTTP OPTIONS /api/orders/kitchen responded 204 in 2.0690 ms
+2026-03-25 04:29:08.462 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - 204 null null 8.8672ms
+2026-03-25 04:29:08.462 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 9.3473ms
+2026-03-25 04:29:08.470 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:29:08.479 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-03-25 04:29:08.483 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:08.521 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:08.522 +01:00 [INF] Executing endpoint '/hubs/orders/negotiate'
+2026-03-25 04:29:08.526 +01:00 [INF] Executed endpoint '/hubs/orders/negotiate'
+2026-03-25 04:29:08.527 +01:00 [INF] HTTP POST /hubs/orders/negotiate responded 200 in 44.3761 ms
+2026-03-25 04:29:08.526 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:29:08.529 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 200 316 application/json 55.1681ms
+2026-03-25 04:29:08.587 +01:00 [INF] Route matched with {action = "GetKitchenOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetKitchenOrders() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:08.652 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44374/hubs/orders?id=nfuqgwB-mNxLeQ7ZRorbeA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJjb2NpbmVyb0ByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb2NpbmVybyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJKdWFuIE1hcnTDrW5leiIsImp0aSI6ImM3YzQ4NjFjLTRkNDYtNGQzMC1hNDQzLWNiNWQyMWNkY2VjZiIsImV4cCI6MTc3NDQzNTUyOCwiaXNzIjoiUmVzdGF1cmFudFBPUy5BUEkiLCJhdWQiOiJSZXN0YXVyYW50UE9TLkNsaWVudCJ9.WmsiHkMSTvjgpc8V6OuBobnJ9bRWNXRhCMHTo7yvkEI - null null
+2026-03-25 04:29:08.653 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:08.654 +01:00 [INF] Executing endpoint '/hubs/orders'
+2026-03-25 04:29:08.688 +01:00 [INF] Client connected: iRU6B7LdDBjNCLlj-ZLKTA
+2026-03-25 04:29:11.404 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-25 04:29:11.757 +01:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] IN (N'EnPreparacion', N'Listo')
+ORDER BY [o].[CreatedAt], [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:29:13.851 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:29:14.080 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API) in 5464.6609ms
+2026-03-25 04:29:14.084 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:29:14.097 +01:00 [INF] HTTP GET /api/orders/kitchen responded 200 in 5575.4117 ms
+2026-03-25 04:29:14.159 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/kitchen - 200 null application/json; charset=utf-8 5689.5804ms
+2026-03-25 04:29:31.844 +01:00 [INF] Client disconnected: iRU6B7LdDBjNCLlj-ZLKTA
+2026-03-25 04:29:31.852 +01:00 [INF] Executed endpoint '/hubs/orders'
+2026-03-25 04:29:31.853 +01:00 [INF] HTTP GET /hubs/orders responded 101 in 23200.0926 ms
+2026-03-25 04:29:31.854 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44374/hubs/orders?id=nfuqgwB-mNxLeQ7ZRorbeA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJjb2NpbmVyb0ByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb2NpbmVybyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJKdWFuIE1hcnTDrW5leiIsImp0aSI6ImM3YzQ4NjFjLTRkNDYtNGQzMC1hNDQzLWNiNWQyMWNkY2VjZiIsImV4cCI6MTc3NDQzNTUyOCwiaXNzIjoiUmVzdGF1cmFudFBPUy5BUEkiLCJhdWQiOiJSZXN0YXVyYW50UE9TLkNsaWVudCJ9.WmsiHkMSTvjgpc8V6OuBobnJ9bRWNXRhCMHTo7yvkEI - 101 null null 23202.1081ms
+2026-03-25 04:29:31.970 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:29:31.972 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:31.973 +01:00 [INF] HTTP OPTIONS /api/orders/kitchen responded 204 in 2.3260 ms
+2026-03-25 04:29:31.974 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-03-25 04:29:31.975 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - 204 null null 4.4483ms
+2026-03-25 04:29:31.976 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:31.977 +01:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 1.3864 ms
+2026-03-25 04:29:31.979 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 4.4168ms
+2026-03-25 04:29:31.985 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-03-25 04:29:31.985 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:29:31.986 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:31.987 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:31.989 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:29:31.989 +01:00 [INF] Executing endpoint '/hubs/orders/negotiate'
+2026-03-25 04:29:31.992 +01:00 [INF] Route matched with {action = "GetKitchenOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetKitchenOrders() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:31.993 +01:00 [INF] Executed endpoint '/hubs/orders/negotiate'
+2026-03-25 04:29:31.993 +01:00 [INF] HTTP POST /hubs/orders/negotiate responded 200 in 7.1970 ms
+2026-03-25 04:29:31.994 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 200 316 application/json 8.8624ms
+2026-03-25 04:29:32.010 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44374/hubs/orders?id=sDQb_jS1N-eiLLJnx-5THQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJjb2NpbmVyb0ByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb2NpbmVybyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJKdWFuIE1hcnTDrW5leiIsImp0aSI6ImM3YzQ4NjFjLTRkNDYtNGQzMC1hNDQzLWNiNWQyMWNkY2VjZiIsImV4cCI6MTc3NDQzNTUyOCwiaXNzIjoiUmVzdGF1cmFudFBPUy5BUEkiLCJhdWQiOiJSZXN0YXVyYW50UE9TLkNsaWVudCJ9.WmsiHkMSTvjgpc8V6OuBobnJ9bRWNXRhCMHTo7yvkEI - null null
+2026-03-25 04:29:32.012 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:32.018 +01:00 [INF] Executing endpoint '/hubs/orders'
+2026-03-25 04:29:32.050 +01:00 [INF] Client connected: 75ahMv1BcF0rYJlalTtJGg
+2026-03-25 04:29:32.510 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] IN (N'EnPreparacion', N'Listo')
+ORDER BY [o].[CreatedAt], [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:29:32.547 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:29:32.551 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API) in 557.5024ms
+2026-03-25 04:29:32.551 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:29:32.552 +01:00 [INF] HTTP GET /api/orders/kitchen responded 200 in 565.0586 ms
+2026-03-25 04:29:32.553 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/kitchen - 200 null application/json; charset=utf-8 567.6682ms
+2026-03-25 04:29:34.903 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/4/ready - null null
+2026-03-25 04:29:34.906 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:34.907 +01:00 [INF] HTTP OPTIONS /api/orders/4/ready responded 204 in 1.3523 ms
+2026-03-25 04:29:34.908 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/4/ready - 204 null null 4.6157ms
+2026-03-25 04:29:34.916 +01:00 [INF] Request starting HTTP/2 PATCH https://localhost:44374/api/orders/4/ready - application/json 2
+2026-03-25 04:29:34.921 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:34.924 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.MarkReady (RestaurantPOS.API)'
+2026-03-25 04:29:34.965 +01:00 [INF] Route matched with {action = "MarkReady", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]] MarkReady(Int32) on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:35.297 +01:00 [INF] Executed DbCommand (87ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CustomerName], [t].[CustomerPhone], [t].[DiscountAmount], [t].[DiscountPercent], [t].[IsActive], [t].[Notes], [t].[OrderNumber], [t].[OrderType], [t].[Status], [t].[Subtotal], [t].[TableId], [t].[TaxAmount], [t].[TaxRate], [t].[TipAmount], [t].[Total], [t].[UpdatedAt], [t].[WaiterId], [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId]
+    FROM [Orders] AS [o]
+    WHERE [o].[Id] = @__orderId_0
+) AS [t]
+LEFT JOIN [OrderItems] AS [o0] ON [t].[Id] = [o0].[OrderId]
+ORDER BY [t].[Id]
+2026-03-25 04:29:35.732 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Orders] SET [UpdatedAt] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2026-03-25 04:29:35.864 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-25 04:29:35.948 +01:00 [INF] Executed DbCommand (34ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t1].[Id], [t1].[CreatedAt], [t1].[CustomerName], [t1].[CustomerPhone], [t1].[DiscountAmount], [t1].[DiscountPercent], [t1].[IsActive], [t1].[Notes], [t1].[OrderNumber], [t1].[OrderType], [t1].[Status], [t1].[Subtotal], [t1].[TableId], [t1].[TaxAmount], [t1].[TaxRate], [t1].[TipAmount], [t1].[Total], [t1].[UpdatedAt], [t1].[WaiterId], [t1].[Id0], [t1].[Capacity], [t1].[CreatedAt0], [t1].[IsActive0], [t1].[Number], [t1].[PositionX], [t1].[PositionY], [t1].[Shape], [t1].[Status0], [t1].[UpdatedAt0], [t1].[ZoneId], [t1].[Id1], [t1].[CreatedAt1], [t1].[Description], [t1].[IsActive1], [t1].[Name], [t1].[UpdatedAt1], [t1].[Id2], [t1].[CreatedAt2], [t1].[Email], [t1].[FirstName], [t1].[IsActive2], [t1].[LastLoginAt], [t1].[LastName], [t1].[PasswordHash], [t1].[Pin], [t1].[RefreshToken], [t1].[RefreshTokenExpiry], [t1].[Role], [t1].[UpdatedAt2], [t2].[Id], [t2].[CreatedAt], [t2].[IsActive], [t2].[Notes], [t2].[OrderId], [t2].[ProductId], [t2].[Quantity], [t2].[ReadyAt], [t2].[SentToKitchenAt], [t2].[Status], [t2].[Subtotal], [t2].[UnitPrice], [t2].[UpdatedAt], [t2].[Id0], [t2].[CategoryId], [t2].[CreatedAt0], [t2].[Description], [t2].[DisplayOrder], [t2].[ImageUrl], [t2].[IsActive0], [t2].[IsAvailable], [t2].[Name], [t2].[PreparationTime], [t2].[Price], [t2].[UpdatedAt0], [t2].[Id1], [t2].[CreatedAt1], [t2].[Name0], [t2].[OrderItemId], [t2].[PriceAdjustment], [t2].[ProductModifierId]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id] AS [Id0], [t].[Capacity], [t].[CreatedAt] AS [CreatedAt0], [t].[IsActive] AS [IsActive0], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status] AS [Status0], [t].[UpdatedAt] AS [UpdatedAt0], [t].[ZoneId], [t0].[Id] AS [Id1], [t0].[CreatedAt] AS [CreatedAt1], [t0].[Description], [t0].[IsActive] AS [IsActive1], [t0].[Name], [t0].[UpdatedAt] AS [UpdatedAt1], [u].[Id] AS [Id2], [u].[CreatedAt] AS [CreatedAt2], [u].[Email], [u].[FirstName], [u].[IsActive] AS [IsActive2], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt] AS [UpdatedAt2]
+    FROM [Orders] AS [o]
+    LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+    LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+    INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+    WHERE [o].[Id] = @__id_0 AND [o].[IsActive] = CAST(1 AS bit)
+) AS [t1]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t2] ON [t1].[Id] = [t2].[OrderId]
+ORDER BY [t1].[Id], [t1].[Id0], [t1].[Id1], [t1].[Id2], [t2].[Id], [t2].[Id0]
+2026-03-25 04:29:35.974 +01:00 [INF] Executing OkObjectResult, writing value of type 'RestaurantPOS.Application.DTOs.Orders.OrderResponseDto'.
+2026-03-25 04:29:35.976 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.MarkReady (RestaurantPOS.API) in 1010.456ms
+2026-03-25 04:29:35.977 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.MarkReady (RestaurantPOS.API)'
+2026-03-25 04:29:35.977 +01:00 [INF] HTTP PATCH /api/orders/4/ready responded 200 in 1055.6307 ms
+2026-03-25 04:29:35.978 +01:00 [INF] Request finished HTTP/2 PATCH https://localhost:44374/api/orders/4/ready - 200 null application/json; charset=utf-8 1062.1332ms
+2026-03-25 04:29:45.417 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders?page=1&pageSize=50 - null null
+2026-03-25 04:29:45.418 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:45.419 +01:00 [INF] HTTP OPTIONS /api/orders responded 204 in 1.1847 ms
+2026-03-25 04:29:45.420 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders?page=1&pageSize=50 - 204 null null 3.1441ms
+2026-03-25 04:29:45.425 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders?page=1&pageSize=50 - null null
+2026-03-25 04:29:45.425 +01:00 [INF] Connection lWBuXMReTQA1yh9T9h6nyQ left group tables
+2026-03-25 04:29:45.425 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:45.430 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:29:45.445 +01:00 [INF] Route matched with {action = "GetAll", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetAll(System.String) on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:45.525 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-25 04:29:45.601 +01:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:29:45.617 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:29:45.620 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetAll (RestaurantPOS.API) in 174.8997ms
+2026-03-25 04:29:45.620 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:29:45.621 +01:00 [INF] HTTP GET /api/orders responded 200 in 195.4717 ms
+2026-03-25 04:29:45.622 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders?page=1&pageSize=50 - 200 null application/json; charset=utf-8 197.0293ms
+2026-03-25 04:29:47.352 +01:00 [INF] Connection lWBuXMReTQA1yh9T9h6nyQ joined group kitchen
+2026-03-25 04:29:47.363 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:29:47.364 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:47.364 +01:00 [INF] HTTP OPTIONS /api/orders/kitchen responded 204 in 0.8889 ms
+2026-03-25 04:29:47.367 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - 204 null null 3.6087ms
+2026-03-25 04:29:47.371 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:29:47.371 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:47.373 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:29:47.374 +01:00 [INF] Route matched with {action = "GetKitchenOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetKitchenOrders() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:47.467 +01:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] IN (N'EnPreparacion', N'Listo')
+ORDER BY [o].[CreatedAt], [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:29:47.487 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:29:47.489 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API) in 114.537ms
+2026-03-25 04:29:47.491 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:29:47.492 +01:00 [INF] HTTP GET /api/orders/kitchen responded 200 in 120.4907 ms
+2026-03-25 04:29:47.498 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/kitchen - 200 null application/json; charset=utf-8 126.3234ms
+2026-03-25 04:29:48.644 +01:00 [INF] Connection lWBuXMReTQA1yh9T9h6nyQ left group kitchen
+2026-03-25 04:29:48.662 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/active - null null
+2026-03-25 04:29:48.663 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:48.663 +01:00 [INF] HTTP OPTIONS /api/orders/active responded 204 in 0.6498 ms
+2026-03-25 04:29:48.664 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/cashregister/my-session - null null
+2026-03-25 04:29:48.664 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/active - 204 null null 2.0147ms
+2026-03-25 04:29:48.666 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:48.666 +01:00 [INF] HTTP OPTIONS /api/cashregister/my-session responded 204 in 0.8923 ms
+2026-03-25 04:29:48.667 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/cashregister/my-session - 204 null null 3.504ms
+2026-03-25 04:29:48.673 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/active - null null
+2026-03-25 04:29:48.673 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:48.674 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/cashregister/my-session - null null
+2026-03-25 04:29:48.675 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:29:48.681 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:48.687 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.CashRegisterController.GetMySession (RestaurantPOS.API)'
+2026-03-25 04:29:48.693 +01:00 [INF] Route matched with {action = "GetActive", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetActive() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:48.697 +01:00 [INF] Route matched with {action = "GetMySession", controller = "CashRegister"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.CashRegister.CashSessionResponseDto]] GetMySession() on controller RestaurantPOS.API.Controllers.CashRegisterController (RestaurantPOS.API).
+2026-03-25 04:29:48.786 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-25 04:29:48.813 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CashRegisterId], [c].[ClosedAt], [c].[ClosedById], [c].[ClosingAmount], [c].[CreatedAt], [c].[Difference], [c].[ExpectedAmount], [c].[IsActive], [c].[Notes], [c].[OpenedAt], [c].[OpenedById], [c].[OpeningAmount], [c].[Status], [c].[TotalCard], [c].[TotalCash], [c].[TotalSales], [c].[TotalTransfer], [c].[TransactionCount], [c].[UpdatedAt], [c0].[Id], [c0].[CreatedAt], [c0].[IsActive], [c0].[Location], [c0].[Name], [c0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Pin], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UpdatedAt]
+FROM [CashRegisterSessions] AS [c]
+INNER JOIN [CashRegisters] AS [c0] ON [c].[CashRegisterId] = [c0].[Id]
+INNER JOIN [Users] AS [u] ON [c].[OpenedById] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [c].[ClosedById] = [u0].[Id]
+WHERE [c].[OpenedById] = @__userId_0 AND [c].[Status] = N'Open'
+2026-03-25 04:29:48.946 +01:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:29:48.953 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:29:48.955 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API) in 261.5959ms
+2026-03-25 04:29:48.956 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:29:48.956 +01:00 [INF] HTTP GET /api/orders/active responded 200 in 282.8210 ms
+2026-03-25 04:29:48.957 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/active - 200 null application/json; charset=utf-8 284.5043ms
+2026-03-25 04:29:49.072 +01:00 [INF] Executing OkObjectResult, writing value of type 'RestaurantPOS.Application.DTOs.CashRegister.CashSessionResponseDto'.
+2026-03-25 04:29:49.110 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.CashRegisterController.GetMySession (RestaurantPOS.API) in 411.9307ms
+2026-03-25 04:29:49.110 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.CashRegisterController.GetMySession (RestaurantPOS.API)'
+2026-03-25 04:29:49.111 +01:00 [INF] HTTP GET /api/cashregister/my-session responded 200 in 430.3542 ms
+2026-03-25 04:29:49.111 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/cashregister/my-session - 200 null application/json; charset=utf-8 437.8328ms
+2026-03-25 04:29:51.959 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/active - null null
+2026-03-25 04:29:51.960 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:51.962 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:29:51.963 +01:00 [INF] Route matched with {action = "GetActive", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetActive() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:52.014 +01:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:29:52.021 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:29:52.024 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API) in 59.6065ms
+2026-03-25 04:29:52.024 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:29:52.024 +01:00 [INF] HTTP GET /api/orders/active responded 200 in 64.2248 ms
+2026-03-25 04:29:52.025 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/active - 200 null application/json; charset=utf-8 66.6355ms
+2026-03-25 04:29:52.864 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/active - null null
+2026-03-25 04:29:52.865 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:52.867 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:29:52.868 +01:00 [INF] Route matched with {action = "GetActive", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetActive() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:52.882 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:29:52.895 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:29:52.897 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API) in 28.3881ms
+2026-03-25 04:29:52.898 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:29:52.898 +01:00 [INF] HTTP GET /api/orders/active responded 200 in 32.9661 ms
+2026-03-25 04:29:52.900 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/active - 200 null application/json; charset=utf-8 35.5301ms
+2026-03-25 04:29:57.445 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/payments - null null
+2026-03-25 04:29:57.446 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:57.448 +01:00 [INF] HTTP OPTIONS /api/payments responded 204 in 1.8944 ms
+2026-03-25 04:29:57.449 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/payments - 204 null null 4.3953ms
+2026-03-25 04:29:57.454 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/api/payments - application/json 80
+2026-03-25 04:29:57.454 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:57.456 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API)'
+2026-03-25 04:29:57.468 +01:00 [INF] Route matched with {action = "Process", controller = "Payments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Payments.PaymentResponseDto]] Process(RestaurantPOS.Application.DTOs.Payments.ProcessPaymentDto) on controller RestaurantPOS.API.Controllers.PaymentsController (RestaurantPOS.API).
+2026-03-25 04:29:57.593 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-25 04:29:57.636 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@__dto_OrderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[CreatedAt], [t0].[CustomerName], [t0].[CustomerPhone], [t0].[DiscountAmount], [t0].[DiscountPercent], [t0].[IsActive], [t0].[Notes], [t0].[OrderNumber], [t0].[OrderType], [t0].[Status], [t0].[Subtotal], [t0].[TableId], [t0].[TaxAmount], [t0].[TaxRate], [t0].[TipAmount], [t0].[Total], [t0].[UpdatedAt], [t0].[WaiterId], [t0].[Id0], [p].[Id], [p].[Amount], [p].[CashSessionId], [p].[ChangeAmount], [p].[CreatedAt], [p].[IsActive], [p].[OrderId], [p].[PaymentMethodId], [p].[ProcessedById], [p].[ReceivedAmount], [p].[Reference], [p].[UpdatedAt], [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [t0].[Capacity], [t0].[CreatedAt0], [t0].[IsActive0], [t0].[Number], [t0].[PositionX], [t0].[PositionY], [t0].[Shape], [t0].[Status0], [t0].[UpdatedAt0], [t0].[ZoneId]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id] AS [Id0], [t].[Capacity], [t].[CreatedAt] AS [CreatedAt0], [t].[IsActive] AS [IsActive0], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status] AS [Status0], [t].[UpdatedAt] AS [UpdatedAt0], [t].[ZoneId]
+    FROM [Orders] AS [o]
+    LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+    WHERE [o].[Id] = @__dto_OrderId_0
+) AS [t0]
+LEFT JOIN [Payments] AS [p] ON [t0].[Id] = [p].[OrderId]
+LEFT JOIN [OrderItems] AS [o0] ON [t0].[Id] = [o0].[OrderId]
+ORDER BY [t0].[Id], [t0].[Id0], [p].[Id]
+2026-03-25 04:29:57.661 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__dto_PaymentMethodCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Code], [p].[CreatedAt], [p].[IsActive], [p].[Name], [p].[UpdatedAt]
+FROM [PaymentMethods] AS [p]
+WHERE [p].[Code] = @__dto_PaymentMethodCode_0 AND [p].[IsActive] = CAST(1 AS bit)
+2026-03-25 04:29:58.114 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = DateTime2), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Boolean), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p12='?' (Size = 200), @p13='?' (DbType = DateTime2), @p16='?' (DbType = Int32), @p14='?' (Size = 50), @p15='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Orders] SET [Status] = @p0, [UpdatedAt] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+INSERT INTO [Payments] ([Amount], [CashSessionId], [ChangeAmount], [CreatedAt], [IsActive], [OrderId], [PaymentMethodId], [ProcessedById], [ReceivedAmount], [Reference], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+UPDATE [Tables] SET [Status] = @p14, [UpdatedAt] = @p15
+OUTPUT 1
+WHERE [Id] = @p16;
+2026-03-25 04:29:58.261 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@__payment_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Amount], [p].[CashSessionId], [p].[ChangeAmount], [p].[CreatedAt], [p].[IsActive], [p].[OrderId], [p].[PaymentMethodId], [p].[ProcessedById], [p].[ReceivedAmount], [p].[Reference], [p].[UpdatedAt], [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [p0].[Id], [p0].[Code], [p0].[CreatedAt], [p0].[IsActive], [p0].[Name], [p0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt]
+FROM [Payments] AS [p]
+INNER JOIN [Orders] AS [o] ON [p].[OrderId] = [o].[Id]
+INNER JOIN [PaymentMethods] AS [p0] ON [p].[PaymentMethodId] = [p0].[Id]
+INNER JOIN [Users] AS [u] ON [p].[ProcessedById] = [u].[Id]
+WHERE [p].[Id] = @__payment_Id_0
+2026-03-25 04:29:58.282 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'RestaurantPOS.Application.DTOs.Payments.PaymentResponseDto'.
+2026-03-25 04:29:58.359 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API) in 890.2595ms
+2026-03-25 04:29:58.359 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API)'
+2026-03-25 04:29:58.359 +01:00 [INF] HTTP POST /api/payments responded 201 in 905.1794 ms
+2026-03-25 04:29:58.360 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/api/payments - 201 null application/json; charset=utf-8 906.7142ms
+2026-03-25 04:29:58.369 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/active - null null
+2026-03-25 04:29:58.370 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:58.370 +01:00 [INF] HTTP OPTIONS /api/orders/active responded 204 in 0.3682 ms
+2026-03-25 04:29:58.370 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/active - 204 null null 1.3854ms
+2026-03-25 04:29:58.375 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/active - null null
+2026-03-25 04:29:58.376 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:29:58.377 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:29:58.378 +01:00 [INF] Route matched with {action = "GetActive", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetActive() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:29:58.399 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:29:58.406 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:29:58.408 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API) in 30.2623ms
+2026-03-25 04:29:58.409 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:29:58.409 +01:00 [INF] HTTP GET /api/orders/active responded 200 in 33.1544 ms
+2026-03-25 04:29:58.410 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/active - 200 null application/json; charset=utf-8 34.5599ms
+2026-03-25 04:30:01.832 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/api/payments - application/json 78
+2026-03-25 04:30:01.832 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:01.835 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API)'
+2026-03-25 04:30:01.835 +01:00 [INF] Route matched with {action = "Process", controller = "Payments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Payments.PaymentResponseDto]] Process(RestaurantPOS.Application.DTOs.Payments.ProcessPaymentDto) on controller RestaurantPOS.API.Controllers.PaymentsController (RestaurantPOS.API).
+2026-03-25 04:30:01.866 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__dto_OrderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[CreatedAt], [t0].[CustomerName], [t0].[CustomerPhone], [t0].[DiscountAmount], [t0].[DiscountPercent], [t0].[IsActive], [t0].[Notes], [t0].[OrderNumber], [t0].[OrderType], [t0].[Status], [t0].[Subtotal], [t0].[TableId], [t0].[TaxAmount], [t0].[TaxRate], [t0].[TipAmount], [t0].[Total], [t0].[UpdatedAt], [t0].[WaiterId], [t0].[Id0], [p].[Id], [p].[Amount], [p].[CashSessionId], [p].[ChangeAmount], [p].[CreatedAt], [p].[IsActive], [p].[OrderId], [p].[PaymentMethodId], [p].[ProcessedById], [p].[ReceivedAmount], [p].[Reference], [p].[UpdatedAt], [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [t0].[Capacity], [t0].[CreatedAt0], [t0].[IsActive0], [t0].[Number], [t0].[PositionX], [t0].[PositionY], [t0].[Shape], [t0].[Status0], [t0].[UpdatedAt0], [t0].[ZoneId]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id] AS [Id0], [t].[Capacity], [t].[CreatedAt] AS [CreatedAt0], [t].[IsActive] AS [IsActive0], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status] AS [Status0], [t].[UpdatedAt] AS [UpdatedAt0], [t].[ZoneId]
+    FROM [Orders] AS [o]
+    LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+    WHERE [o].[Id] = @__dto_OrderId_0
+) AS [t0]
+LEFT JOIN [Payments] AS [p] ON [t0].[Id] = [p].[OrderId]
+LEFT JOIN [OrderItems] AS [o0] ON [t0].[Id] = [o0].[OrderId]
+ORDER BY [t0].[Id], [t0].[Id0], [p].[Id]
+2026-03-25 04:30:01.882 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__dto_PaymentMethodCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Code], [p].[CreatedAt], [p].[IsActive], [p].[Name], [p].[UpdatedAt]
+FROM [PaymentMethods] AS [p]
+WHERE [p].[Code] = @__dto_PaymentMethodCode_0 AND [p].[IsActive] = CAST(1 AS bit)
+2026-03-25 04:30:01.902 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = DateTime2), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Boolean), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p12='?' (Size = 200), @p13='?' (DbType = DateTime2), @p16='?' (DbType = Int32), @p14='?' (Size = 50), @p15='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Orders] SET [Status] = @p0, [UpdatedAt] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+INSERT INTO [Payments] ([Amount], [CashSessionId], [ChangeAmount], [CreatedAt], [IsActive], [OrderId], [PaymentMethodId], [ProcessedById], [ReceivedAmount], [Reference], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+UPDATE [Tables] SET [Status] = @p14, [UpdatedAt] = @p15
+OUTPUT 1
+WHERE [Id] = @p16;
+2026-03-25 04:30:01.912 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__payment_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Amount], [p].[CashSessionId], [p].[ChangeAmount], [p].[CreatedAt], [p].[IsActive], [p].[OrderId], [p].[PaymentMethodId], [p].[ProcessedById], [p].[ReceivedAmount], [p].[Reference], [p].[UpdatedAt], [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [p0].[Id], [p0].[Code], [p0].[CreatedAt], [p0].[IsActive], [p0].[Name], [p0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt]
+FROM [Payments] AS [p]
+INNER JOIN [Orders] AS [o] ON [p].[OrderId] = [o].[Id]
+INNER JOIN [PaymentMethods] AS [p0] ON [p].[PaymentMethodId] = [p0].[Id]
+INNER JOIN [Users] AS [u] ON [p].[ProcessedById] = [u].[Id]
+WHERE [p].[Id] = @__payment_Id_0
+2026-03-25 04:30:01.914 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'RestaurantPOS.Application.DTOs.Payments.PaymentResponseDto'.
+2026-03-25 04:30:01.917 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API) in 80.9263ms
+2026-03-25 04:30:01.918 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API)'
+2026-03-25 04:30:01.918 +01:00 [INF] HTTP POST /api/payments responded 201 in 85.6801 ms
+2026-03-25 04:30:01.919 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/api/payments - 201 null application/json; charset=utf-8 87.2184ms
+2026-03-25 04:30:01.927 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/active - null null
+2026-03-25 04:30:01.927 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:01.929 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:30:01.929 +01:00 [INF] Route matched with {action = "GetActive", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetActive() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:30:01.945 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:30:01.952 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:30:01.954 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API) in 24.3292ms
+2026-03-25 04:30:01.954 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:30:01.955 +01:00 [INF] HTTP GET /api/orders/active responded 200 in 27.0913 ms
+2026-03-25 04:30:01.957 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/active - 200 null application/json; charset=utf-8 30.1578ms
+2026-03-25 04:30:07.873 +01:00 [INF] Client disconnected: 75ahMv1BcF0rYJlalTtJGg
+2026-03-25 04:30:07.877 +01:00 [INF] Executed endpoint '/hubs/orders'
+2026-03-25 04:30:07.877 +01:00 [INF] HTTP GET /hubs/orders responded 101 in 35865.9256 ms
+2026-03-25 04:30:07.878 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44374/hubs/orders?id=sDQb_jS1N-eiLLJnx-5THQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJjb2NpbmVyb0ByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb2NpbmVybyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJKdWFuIE1hcnTDrW5leiIsImp0aSI6ImM3YzQ4NjFjLTRkNDYtNGQzMC1hNDQzLWNiNWQyMWNkY2VjZiIsImV4cCI6MTc3NDQzNTUyOCwiaXNzIjoiUmVzdGF1cmFudFBPUy5BUEkiLCJhdWQiOiJSZXN0YXVyYW50UE9TLkNsaWVudCJ9.WmsiHkMSTvjgpc8V6OuBobnJ9bRWNXRhCMHTo7yvkEI - 101 null null 35868.5197ms
+2026-03-25 04:30:08.043 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:30:08.044 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:08.044 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-03-25 04:30:08.045 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:08.045 +01:00 [INF] HTTP OPTIONS /api/orders/kitchen responded 204 in 1.0590 ms
+2026-03-25 04:30:08.045 +01:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 0.3714 ms
+2026-03-25 04:30:08.047 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - 204 null null 3.5838ms
+2026-03-25 04:30:08.046 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 1.7414ms
+2026-03-25 04:30:08.054 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-03-25 04:30:08.054 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:08.055 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:30:08.056 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:08.057 +01:00 [INF] Executing endpoint '/hubs/orders/negotiate'
+2026-03-25 04:30:08.057 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:30:08.058 +01:00 [INF] Route matched with {action = "GetKitchenOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetKitchenOrders() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:30:08.059 +01:00 [INF] Executed endpoint '/hubs/orders/negotiate'
+2026-03-25 04:30:08.059 +01:00 [INF] HTTP POST /hubs/orders/negotiate responded 200 in 4.8004 ms
+2026-03-25 04:30:08.060 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 200 316 application/json 6.0405ms
+2026-03-25 04:30:08.079 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44374/hubs/orders?id=aWmvv_-nBTjwKYfmzi4CBg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJjb2NpbmVyb0ByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb2NpbmVybyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJKdWFuIE1hcnTDrW5leiIsImp0aSI6ImM3YzQ4NjFjLTRkNDYtNGQzMC1hNDQzLWNiNWQyMWNkY2VjZiIsImV4cCI6MTc3NDQzNTUyOCwiaXNzIjoiUmVzdGF1cmFudFBPUy5BUEkiLCJhdWQiOiJSZXN0YXVyYW50UE9TLkNsaWVudCJ9.WmsiHkMSTvjgpc8V6OuBobnJ9bRWNXRhCMHTo7yvkEI - null null
+2026-03-25 04:30:08.080 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:08.081 +01:00 [INF] Executing endpoint '/hubs/orders'
+2026-03-25 04:30:08.106 +01:00 [INF] Client connected: mQnX6KQNw4delr525xC6xg
+2026-03-25 04:30:08.137 +01:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] IN (N'EnPreparacion', N'Listo')
+ORDER BY [o].[CreatedAt], [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:30:08.144 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:30:08.148 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API) in 89.223ms
+2026-03-25 04:30:08.148 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:30:08.149 +01:00 [INF] HTTP GET /api/orders/kitchen responded 200 in 92.2518 ms
+2026-03-25 04:30:08.149 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/kitchen - 200 null application/json; charset=utf-8 94.3038ms
+2026-03-25 04:30:15.608 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/5/ready - null null
+2026-03-25 04:30:15.609 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:15.610 +01:00 [INF] HTTP OPTIONS /api/orders/5/ready responded 204 in 1.1356 ms
+2026-03-25 04:30:15.611 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/5/ready - 204 null null 2.9067ms
+2026-03-25 04:30:15.617 +01:00 [INF] Request starting HTTP/2 PATCH https://localhost:44374/api/orders/5/ready - application/json 2
+2026-03-25 04:30:15.617 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:15.618 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.MarkReady (RestaurantPOS.API)'
+2026-03-25 04:30:15.619 +01:00 [INF] Route matched with {action = "MarkReady", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]] MarkReady(Int32) on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:30:15.639 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CustomerName], [t].[CustomerPhone], [t].[DiscountAmount], [t].[DiscountPercent], [t].[IsActive], [t].[Notes], [t].[OrderNumber], [t].[OrderType], [t].[Status], [t].[Subtotal], [t].[TableId], [t].[TaxAmount], [t].[TaxRate], [t].[TipAmount], [t].[Total], [t].[UpdatedAt], [t].[WaiterId], [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId]
+    FROM [Orders] AS [o]
+    WHERE [o].[Id] = @__orderId_0
+) AS [t]
+LEFT JOIN [OrderItems] AS [o0] ON [t].[Id] = [o0].[OrderId]
+ORDER BY [t].[Id]
+2026-03-25 04:30:15.654 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Orders] SET [Status] = @p0, [UpdatedAt] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2026-03-25 04:30:15.693 +01:00 [INF] Executed DbCommand (36ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t1].[Id], [t1].[CreatedAt], [t1].[CustomerName], [t1].[CustomerPhone], [t1].[DiscountAmount], [t1].[DiscountPercent], [t1].[IsActive], [t1].[Notes], [t1].[OrderNumber], [t1].[OrderType], [t1].[Status], [t1].[Subtotal], [t1].[TableId], [t1].[TaxAmount], [t1].[TaxRate], [t1].[TipAmount], [t1].[Total], [t1].[UpdatedAt], [t1].[WaiterId], [t1].[Id0], [t1].[Capacity], [t1].[CreatedAt0], [t1].[IsActive0], [t1].[Number], [t1].[PositionX], [t1].[PositionY], [t1].[Shape], [t1].[Status0], [t1].[UpdatedAt0], [t1].[ZoneId], [t1].[Id1], [t1].[CreatedAt1], [t1].[Description], [t1].[IsActive1], [t1].[Name], [t1].[UpdatedAt1], [t1].[Id2], [t1].[CreatedAt2], [t1].[Email], [t1].[FirstName], [t1].[IsActive2], [t1].[LastLoginAt], [t1].[LastName], [t1].[PasswordHash], [t1].[Pin], [t1].[RefreshToken], [t1].[RefreshTokenExpiry], [t1].[Role], [t1].[UpdatedAt2], [t2].[Id], [t2].[CreatedAt], [t2].[IsActive], [t2].[Notes], [t2].[OrderId], [t2].[ProductId], [t2].[Quantity], [t2].[ReadyAt], [t2].[SentToKitchenAt], [t2].[Status], [t2].[Subtotal], [t2].[UnitPrice], [t2].[UpdatedAt], [t2].[Id0], [t2].[CategoryId], [t2].[CreatedAt0], [t2].[Description], [t2].[DisplayOrder], [t2].[ImageUrl], [t2].[IsActive0], [t2].[IsAvailable], [t2].[Name], [t2].[PreparationTime], [t2].[Price], [t2].[UpdatedAt0], [t2].[Id1], [t2].[CreatedAt1], [t2].[Name0], [t2].[OrderItemId], [t2].[PriceAdjustment], [t2].[ProductModifierId]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id] AS [Id0], [t].[Capacity], [t].[CreatedAt] AS [CreatedAt0], [t].[IsActive] AS [IsActive0], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status] AS [Status0], [t].[UpdatedAt] AS [UpdatedAt0], [t].[ZoneId], [t0].[Id] AS [Id1], [t0].[CreatedAt] AS [CreatedAt1], [t0].[Description], [t0].[IsActive] AS [IsActive1], [t0].[Name], [t0].[UpdatedAt] AS [UpdatedAt1], [u].[Id] AS [Id2], [u].[CreatedAt] AS [CreatedAt2], [u].[Email], [u].[FirstName], [u].[IsActive] AS [IsActive2], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt] AS [UpdatedAt2]
+    FROM [Orders] AS [o]
+    LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+    LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+    INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+    WHERE [o].[Id] = @__id_0 AND [o].[IsActive] = CAST(1 AS bit)
+) AS [t1]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t2] ON [t1].[Id] = [t2].[OrderId]
+ORDER BY [t1].[Id], [t1].[Id0], [t1].[Id1], [t1].[Id2], [t2].[Id], [t2].[Id0]
+2026-03-25 04:30:15.696 +01:00 [INF] Executing OkObjectResult, writing value of type 'RestaurantPOS.Application.DTOs.Orders.OrderResponseDto'.
+2026-03-25 04:30:15.699 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.MarkReady (RestaurantPOS.API) in 79.9427ms
+2026-03-25 04:30:15.700 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.MarkReady (RestaurantPOS.API)'
+2026-03-25 04:30:15.700 +01:00 [INF] HTTP PATCH /api/orders/5/ready responded 200 in 83.0205 ms
+2026-03-25 04:30:15.702 +01:00 [INF] Request finished HTTP/2 PATCH https://localhost:44374/api/orders/5/ready - 200 null application/json; charset=utf-8 85.8397ms
+2026-03-25 04:30:22.778 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/active - null null
+2026-03-25 04:30:22.778 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:22.779 +01:00 [INF] HTTP OPTIONS /api/orders/active responded 204 in 1.1136 ms
+2026-03-25 04:30:22.781 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/active - 204 null null 3.0353ms
+2026-03-25 04:30:22.786 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/active - null null
+2026-03-25 04:30:22.787 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:22.789 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:30:22.790 +01:00 [INF] Route matched with {action = "GetActive", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetActive() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:30:22.807 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:30:22.815 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:30:22.817 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API) in 26.3917ms
+2026-03-25 04:30:22.817 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:30:22.818 +01:00 [INF] HTTP GET /api/orders/active responded 200 in 31.0497 ms
+2026-03-25 04:30:22.819 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/active - 200 null application/json; charset=utf-8 33.0157ms
+2026-03-25 04:30:29.734 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/payments - null null
+2026-03-25 04:30:29.734 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:29.735 +01:00 [INF] HTTP OPTIONS /api/payments responded 204 in 0.4843 ms
+2026-03-25 04:30:29.735 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/payments - 204 null null 2.0521ms
+2026-03-25 04:30:29.740 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/api/payments - application/json 57
+2026-03-25 04:30:29.743 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:29.746 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API)'
+2026-03-25 04:30:29.749 +01:00 [INF] Route matched with {action = "Process", controller = "Payments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Payments.PaymentResponseDto]] Process(RestaurantPOS.Application.DTOs.Payments.ProcessPaymentDto) on controller RestaurantPOS.API.Controllers.PaymentsController (RestaurantPOS.API).
+2026-03-25 04:30:29.773 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__dto_OrderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[CreatedAt], [t0].[CustomerName], [t0].[CustomerPhone], [t0].[DiscountAmount], [t0].[DiscountPercent], [t0].[IsActive], [t0].[Notes], [t0].[OrderNumber], [t0].[OrderType], [t0].[Status], [t0].[Subtotal], [t0].[TableId], [t0].[TaxAmount], [t0].[TaxRate], [t0].[TipAmount], [t0].[Total], [t0].[UpdatedAt], [t0].[WaiterId], [t0].[Id0], [p].[Id], [p].[Amount], [p].[CashSessionId], [p].[ChangeAmount], [p].[CreatedAt], [p].[IsActive], [p].[OrderId], [p].[PaymentMethodId], [p].[ProcessedById], [p].[ReceivedAmount], [p].[Reference], [p].[UpdatedAt], [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [t0].[Capacity], [t0].[CreatedAt0], [t0].[IsActive0], [t0].[Number], [t0].[PositionX], [t0].[PositionY], [t0].[Shape], [t0].[Status0], [t0].[UpdatedAt0], [t0].[ZoneId]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id] AS [Id0], [t].[Capacity], [t].[CreatedAt] AS [CreatedAt0], [t].[IsActive] AS [IsActive0], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status] AS [Status0], [t].[UpdatedAt] AS [UpdatedAt0], [t].[ZoneId]
+    FROM [Orders] AS [o]
+    LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+    WHERE [o].[Id] = @__dto_OrderId_0
+) AS [t0]
+LEFT JOIN [Payments] AS [p] ON [t0].[Id] = [p].[OrderId]
+LEFT JOIN [OrderItems] AS [o0] ON [t0].[Id] = [o0].[OrderId]
+ORDER BY [t0].[Id], [t0].[Id0], [p].[Id]
+2026-03-25 04:30:29.787 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__dto_PaymentMethodCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Code], [p].[CreatedAt], [p].[IsActive], [p].[Name], [p].[UpdatedAt]
+FROM [PaymentMethods] AS [p]
+WHERE [p].[Code] = @__dto_PaymentMethodCode_0 AND [p].[IsActive] = CAST(1 AS bit)
+2026-03-25 04:30:29.801 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = DateTime2), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Boolean), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p12='?' (Size = 200), @p13='?' (DbType = DateTime2), @p16='?' (DbType = Int32), @p14='?' (Size = 50), @p15='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Orders] SET [Status] = @p0, [UpdatedAt] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+INSERT INTO [Payments] ([Amount], [CashSessionId], [ChangeAmount], [CreatedAt], [IsActive], [OrderId], [PaymentMethodId], [ProcessedById], [ReceivedAmount], [Reference], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+UPDATE [Tables] SET [Status] = @p14, [UpdatedAt] = @p15
+OUTPUT 1
+WHERE [Id] = @p16;
+2026-03-25 04:30:29.813 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__payment_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Amount], [p].[CashSessionId], [p].[ChangeAmount], [p].[CreatedAt], [p].[IsActive], [p].[OrderId], [p].[PaymentMethodId], [p].[ProcessedById], [p].[ReceivedAmount], [p].[Reference], [p].[UpdatedAt], [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [p0].[Id], [p0].[Code], [p0].[CreatedAt], [p0].[IsActive], [p0].[Name], [p0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt]
+FROM [Payments] AS [p]
+INNER JOIN [Orders] AS [o] ON [p].[OrderId] = [o].[Id]
+INNER JOIN [PaymentMethods] AS [p0] ON [p].[PaymentMethodId] = [p0].[Id]
+INNER JOIN [Users] AS [u] ON [p].[ProcessedById] = [u].[Id]
+WHERE [p].[Id] = @__payment_Id_0
+2026-03-25 04:30:29.814 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'RestaurantPOS.Application.DTOs.Payments.PaymentResponseDto'.
+2026-03-25 04:30:29.816 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API) in 66.299ms
+2026-03-25 04:30:29.817 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.PaymentsController.Process (RestaurantPOS.API)'
+2026-03-25 04:30:29.817 +01:00 [INF] HTTP POST /api/payments responded 201 in 75.2918 ms
+2026-03-25 04:30:29.818 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/api/payments - 201 null application/json; charset=utf-8 77.7204ms
+2026-03-25 04:30:29.825 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/active - null null
+2026-03-25 04:30:29.825 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:29.826 +01:00 [INF] HTTP OPTIONS /api/orders/active responded 204 in 0.2431 ms
+2026-03-25 04:30:29.826 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/active - 204 null null 1.4905ms
+2026-03-25 04:30:29.831 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/active - null null
+2026-03-25 04:30:29.831 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:30:29.832 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:30:29.833 +01:00 [INF] Route matched with {action = "GetActive", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetActive() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:30:29.849 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:30:29.855 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:30:29.857 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API) in 23.7018ms
+2026-03-25 04:30:29.857 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetActive (RestaurantPOS.API)'
+2026-03-25 04:30:29.858 +01:00 [INF] HTTP GET /api/orders/active responded 200 in 26.1926 ms
+2026-03-25 04:30:29.859 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/active - 200 null application/json; charset=utf-8 27.7252ms
+2026-03-25 04:30:49.863 +01:00 [INF] Client disconnected: mQnX6KQNw4delr525xC6xg
+2026-03-25 04:30:49.864 +01:00 [INF] Executed endpoint '/hubs/orders'
+2026-03-25 04:30:49.864 +01:00 [INF] HTTP GET /hubs/orders responded 101 in 41784.0866 ms
+2026-03-25 04:30:49.865 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44374/hubs/orders?id=aWmvv_-nBTjwKYfmzi4CBg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJjb2NpbmVyb0ByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb2NpbmVybyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJKdWFuIE1hcnTDrW5leiIsImp0aSI6ImM3YzQ4NjFjLTRkNDYtNGQzMC1hNDQzLWNiNWQyMWNkY2VjZiIsImV4cCI6MTc3NDQzNTUyOCwiaXNzIjoiUmVzdGF1cmFudFBPUy5BUEkiLCJhdWQiOiJSZXN0YXVyYW50UE9TLkNsaWVudCJ9.WmsiHkMSTvjgpc8V6OuBobnJ9bRWNXRhCMHTo7yvkEI - 101 null null 41787.247ms
+2026-03-25 04:31:26.947 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/auth/login - null null
+2026-03-25 04:31:26.948 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:26.950 +01:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 1.2889 ms
+2026-03-25 04:31:26.951 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/auth/login - 204 null null 3.1689ms
+2026-03-25 04:31:26.965 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/api/auth/login - application/json 58
+2026-03-25 04:31:26.970 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:26.971 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API)'
+2026-03-25 04:31:26.984 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Auth.TokenResponseDto]] Login(RestaurantPOS.Application.DTOs.Auth.LoginDto) on controller RestaurantPOS.API.Controllers.AuthController (RestaurantPOS.API).
+2026-03-25 04:31:27.167 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@__ToLower_0='?' (Size = 200)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE LOWER([u].[Email]) = @__ToLower_0
+2026-03-25 04:31:27.848 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 200), @p2='?' (Size = 100), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 100), @p6='?' (Size = 500), @p7='?' (Size = 10), @p8='?' (Size = 500), @p9='?' (DbType = DateTime2), @p10='?' (Size = 50), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [CreatedAt] = @p0, [Email] = @p1, [FirstName] = @p2, [IsActive] = @p3, [LastLoginAt] = @p4, [LastName] = @p5, [PasswordHash] = @p6, [Pin] = @p7, [RefreshToken] = @p8, [RefreshTokenExpiry] = @p9, [Role] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2026-03-25 04:31:27.912 +01:00 [INF] Executing OkObjectResult, writing value of type 'RestaurantPOS.Application.DTOs.Auth.TokenResponseDto'.
+2026-03-25 04:31:27.930 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API) in 945.424ms
+2026-03-25 04:31:27.930 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API)'
+2026-03-25 04:31:27.930 +01:00 [INF] HTTP POST /api/auth/login responded 200 in 960.3231 ms
+2026-03-25 04:31:27.931 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/api/auth/login - 200 null application/json; charset=utf-8 966.0889ms
+2026-03-25 04:31:28.051 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/tables - null null
+2026-03-25 04:31:28.051 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:28.052 +01:00 [INF] HTTP OPTIONS /api/tables responded 204 in 0.3523 ms
+2026-03-25 04:31:28.054 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/tables - 204 null null 2.5149ms
+2026-03-25 04:31:28.056 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-03-25 04:31:28.056 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:28.056 +01:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 0.2749 ms
+2026-03-25 04:31:28.057 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 1.1335ms
+2026-03-25 04:31:28.061 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/tables - null null
+2026-03-25 04:31:28.062 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:28.063 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.TablesController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:28.068 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-03-25 04:31:28.069 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:28.070 +01:00 [INF] Executing endpoint '/hubs/orders/negotiate'
+2026-03-25 04:31:28.072 +01:00 [INF] Executed endpoint '/hubs/orders/negotiate'
+2026-03-25 04:31:28.072 +01:00 [INF] HTTP POST /hubs/orders/negotiate responded 200 in 3.3497 ms
+2026-03-25 04:31:28.072 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 200 316 application/json 4.1334ms
+2026-03-25 04:31:28.075 +01:00 [INF] Route matched with {action = "GetAll", controller = "Tables"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Tables.TableResponseDto]]] GetAll() on controller RestaurantPOS.API.Controllers.TablesController (RestaurantPOS.API).
+2026-03-25 04:31:28.090 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44374/hubs/orders?id=hnf0HxNGhcL-bj_Njmx0BQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZXNlcm9AcmVzdGF1cmFudGUuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWVzZXJvIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Ik1hcsOtYSBMw7NwZXoiLCJqdGkiOiI4OWI4NmM2Zi04Zjc1LTQwZmUtOWRkMi1jMjFhN2EzNDJhYTEiLCJleHAiOjE3NzQ0MzgyODcsImlzcyI6IlJlc3RhdXJhbnRQT1MuQVBJIiwiYXVkIjoiUmVzdGF1cmFudFBPUy5DbGllbnQifQ.y2utW8kih3h03erXLcxvrPo8xQ0q73_ZOgqDE5O8wlM - null null
+2026-03-25 04:31:28.091 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:28.092 +01:00 [INF] Executing endpoint '/hubs/orders'
+2026-03-25 04:31:28.126 +01:00 [INF] Client connected: 53uylBOrptKgu3XQElBa7Q
+2026-03-25 04:31:28.220 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[CustomerName], [t1].[CustomerPhone], [t1].[DiscountAmount], [t1].[DiscountPercent], [t1].[IsActive], [t1].[Notes], [t1].[OrderNumber], [t1].[OrderType], [t1].[Status], [t1].[Subtotal], [t1].[TableId], [t1].[TaxAmount], [t1].[TaxRate], [t1].[TipAmount], [t1].[Total], [t1].[UpdatedAt], [t1].[WaiterId]
+FROM [Tables] AS [t]
+INNER JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+LEFT JOIN (
+    SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId]
+    FROM [Orders] AS [o]
+    WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+) AS [t1] ON [t].[Id] = [t1].[TableId]
+WHERE [t].[IsActive] = CAST(1 AS bit)
+ORDER BY [t].[Number], [t].[Id], [t0].[Id]
+2026-03-25 04:31:28.266 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Tables.TableResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:31:28.281 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.TablesController.GetAll (RestaurantPOS.API) in 205.1791ms
+2026-03-25 04:31:28.281 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.TablesController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:28.282 +01:00 [INF] HTTP GET /api/tables responded 200 in 219.9076 ms
+2026-03-25 04:31:28.282 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/tables - 200 null application/json; charset=utf-8 221.4161ms
+2026-03-25 04:31:34.438 +01:00 [INF] Connection 53uylBOrptKgu3XQElBa7Q left group tables
+2026-03-25 04:31:34.456 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders?page=1&pageSize=50 - null null
+2026-03-25 04:31:34.456 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:34.457 +01:00 [INF] HTTP OPTIONS /api/orders responded 204 in 0.5614 ms
+2026-03-25 04:31:34.458 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders?page=1&pageSize=50 - 204 null null 2.6245ms
+2026-03-25 04:31:34.468 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders?page=1&pageSize=50 - null null
+2026-03-25 04:31:34.469 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:34.471 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:34.471 +01:00 [INF] Route matched with {action = "GetAll", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetAll(System.String) on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:31:34.525 +01:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[CreatedAt] DESC, [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:31:34.533 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:31:34.535 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetAll (RestaurantPOS.API) in 62.9694ms
+2026-03-25 04:31:34.535 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:34.535 +01:00 [INF] HTTP GET /api/orders responded 200 in 65.8377 ms
+2026-03-25 04:31:34.536 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders?page=1&pageSize=50 - 200 null application/json; charset=utf-8 68.7552ms
+2026-03-25 04:31:36.548 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/categories - null null
+2026-03-25 04:31:36.548 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:36.549 +01:00 [INF] HTTP OPTIONS /api/categories responded 204 in 0.5629 ms
+2026-03-25 04:31:36.549 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/products - null null
+2026-03-25 04:31:36.550 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:36.550 +01:00 [INF] HTTP OPTIONS /api/products responded 204 in 0.3707 ms
+2026-03-25 04:31:36.550 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/categories - 204 null null 2.5557ms
+2026-03-25 04:31:36.551 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/products - 204 null null 1.8765ms
+2026-03-25 04:31:36.561 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/categories - null null
+2026-03-25 04:31:36.562 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/products - null null
+2026-03-25 04:31:36.562 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:36.562 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:36.565 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.CategoriesController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:36.565 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.ProductsController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:36.576 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Products.CategoryResponseDto]]] GetAll() on controller RestaurantPOS.API.Controllers.CategoriesController (RestaurantPOS.API).
+2026-03-25 04:31:36.576 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Products.ProductResponseDto]]] GetAll(Boolean) on controller RestaurantPOS.API.Controllers.ProductsController (RestaurantPOS.API).
+2026-03-25 04:31:36.642 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[DisplayOrder], [c].[IconName], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [t].[Id], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[DisplayOrder], [t].[ImageUrl], [t].[IsActive], [t].[IsAvailable], [t].[Name], [t].[PreparationTime], [t].[Price], [t].[UpdatedAt]
+FROM [Categories] AS [c]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt]
+    FROM [Products] AS [p]
+    WHERE [p].[IsActive] = CAST(1 AS bit)
+) AS [t] ON [c].[Id] = [t].[CategoryId]
+WHERE [c].[IsActive] = CAST(1 AS bit)
+ORDER BY [c].[DisplayOrder], [c].[Id]
+2026-03-25 04:31:36.677 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[DisplayOrder], [c].[IconName], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [p0].[Id], [p0].[CreatedAt], [p0].[IsActive], [p0].[Name], [p0].[PriceAdjustment], [p0].[ProductId], [p0].[UpdatedAt]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+LEFT JOIN [ProductModifiers] AS [p0] ON [p].[Id] = [p0].[ProductId]
+WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[IsAvailable] = CAST(1 AS bit)
+ORDER BY [c].[DisplayOrder], [p].[DisplayOrder], [p].[Id], [c].[Id]
+2026-03-25 04:31:36.720 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Products.CategoryResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:31:36.728 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.CategoriesController.GetAll (RestaurantPOS.API) in 151.8094ms
+2026-03-25 04:31:36.729 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.CategoriesController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:36.729 +01:00 [INF] HTTP GET /api/categories responded 200 in 166.9580 ms
+2026-03-25 04:31:36.730 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/categories - 200 null application/json; charset=utf-8 168.5431ms
+2026-03-25 04:31:36.774 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Products.ProductResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:31:36.790 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.ProductsController.GetAll (RestaurantPOS.API) in 213.5006ms
+2026-03-25 04:31:36.791 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.ProductsController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:36.791 +01:00 [INF] HTTP GET /api/products responded 200 in 228.7356 ms
+2026-03-25 04:31:36.792 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/products - 200 null application/json; charset=utf-8 229.8918ms
+2026-03-25 04:31:38.771 +01:00 [INF] Connection 53uylBOrptKgu3XQElBa7Q joined group tables
+2026-03-25 04:31:38.779 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/tables - null null
+2026-03-25 04:31:38.779 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:38.780 +01:00 [INF] HTTP OPTIONS /api/tables responded 204 in 0.2573 ms
+2026-03-25 04:31:38.781 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/tables - 204 null null 2.0499ms
+2026-03-25 04:31:38.795 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/tables - null null
+2026-03-25 04:31:38.795 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:38.798 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.TablesController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:38.798 +01:00 [INF] Route matched with {action = "GetAll", controller = "Tables"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Tables.TableResponseDto]]] GetAll() on controller RestaurantPOS.API.Controllers.TablesController (RestaurantPOS.API).
+2026-03-25 04:31:38.815 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[CustomerName], [t1].[CustomerPhone], [t1].[DiscountAmount], [t1].[DiscountPercent], [t1].[IsActive], [t1].[Notes], [t1].[OrderNumber], [t1].[OrderType], [t1].[Status], [t1].[Subtotal], [t1].[TableId], [t1].[TaxAmount], [t1].[TaxRate], [t1].[TipAmount], [t1].[Total], [t1].[UpdatedAt], [t1].[WaiterId]
+FROM [Tables] AS [t]
+INNER JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+LEFT JOIN (
+    SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId]
+    FROM [Orders] AS [o]
+    WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] <> N'Pagado' AND [o].[Status] <> N'Cancelado'
+) AS [t1] ON [t].[Id] = [t1].[TableId]
+WHERE [t].[IsActive] = CAST(1 AS bit)
+ORDER BY [t].[Number], [t].[Id], [t0].[Id]
+2026-03-25 04:31:38.823 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Tables.TableResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:31:38.825 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.TablesController.GetAll (RestaurantPOS.API) in 26.4485ms
+2026-03-25 04:31:38.826 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.TablesController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:38.826 +01:00 [INF] HTTP GET /api/tables responded 200 in 30.8574 ms
+2026-03-25 04:31:38.829 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/tables - 200 null application/json; charset=utf-8 34.8591ms
+2026-03-25 04:31:45.048 +01:00 [INF] Connection 53uylBOrptKgu3XQElBa7Q left group tables
+2026-03-25 04:31:45.060 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/categories - null null
+2026-03-25 04:31:45.061 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:45.062 +01:00 [INF] HTTP OPTIONS /api/categories responded 204 in 0.8497 ms
+2026-03-25 04:31:45.062 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/categories - 204 null null 2.3459ms
+2026-03-25 04:31:45.063 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/products - null null
+2026-03-25 04:31:45.063 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:45.063 +01:00 [INF] HTTP OPTIONS /api/products responded 204 in 0.4041 ms
+2026-03-25 04:31:45.064 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/products - 204 null null 1.5878ms
+2026-03-25 04:31:45.072 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/categories - null null
+2026-03-25 04:31:45.073 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:45.074 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/products - null null
+2026-03-25 04:31:45.074 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:45.075 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.CategoriesController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:45.076 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.ProductsController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:45.076 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Products.ProductResponseDto]]] GetAll(Boolean) on controller RestaurantPOS.API.Controllers.ProductsController (RestaurantPOS.API).
+2026-03-25 04:31:45.076 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Products.CategoryResponseDto]]] GetAll() on controller RestaurantPOS.API.Controllers.CategoriesController (RestaurantPOS.API).
+2026-03-25 04:31:45.092 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[DisplayOrder], [c].[IconName], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [t].[Id], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[DisplayOrder], [t].[ImageUrl], [t].[IsActive], [t].[IsAvailable], [t].[Name], [t].[PreparationTime], [t].[Price], [t].[UpdatedAt]
+FROM [Categories] AS [c]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt]
+    FROM [Products] AS [p]
+    WHERE [p].[IsActive] = CAST(1 AS bit)
+) AS [t] ON [c].[Id] = [t].[CategoryId]
+WHERE [c].[IsActive] = CAST(1 AS bit)
+ORDER BY [c].[DisplayOrder], [c].[Id]
+2026-03-25 04:31:45.106 +01:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[DisplayOrder], [c].[IconName], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [p0].[Id], [p0].[CreatedAt], [p0].[IsActive], [p0].[Name], [p0].[PriceAdjustment], [p0].[ProductId], [p0].[UpdatedAt]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+LEFT JOIN [ProductModifiers] AS [p0] ON [p].[Id] = [p0].[ProductId]
+WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[IsAvailable] = CAST(1 AS bit)
+ORDER BY [c].[DisplayOrder], [p].[DisplayOrder], [p].[Id], [c].[Id]
+2026-03-25 04:31:45.114 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Products.CategoryResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:31:45.124 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Products.ProductResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:31:45.124 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.CategoriesController.GetAll (RestaurantPOS.API) in 47.3259ms
+2026-03-25 04:31:45.124 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.CategoriesController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:45.124 +01:00 [INF] HTTP GET /api/categories responded 200 in 51.3585 ms
+2026-03-25 04:31:45.133 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.ProductsController.GetAll (RestaurantPOS.API) in 56.0616ms
+2026-03-25 04:31:45.133 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.ProductsController.GetAll (RestaurantPOS.API)'
+2026-03-25 04:31:45.134 +01:00 [INF] HTTP GET /api/products responded 200 in 59.6223 ms
+2026-03-25 04:31:45.134 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/categories - 200 null application/json; charset=utf-8 61.4975ms
+2026-03-25 04:31:45.134 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/products - 200 null application/json; charset=utf-8 60.5933ms
+2026-03-25 04:31:49.082 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders - null null
+2026-03-25 04:31:49.083 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:49.083 +01:00 [INF] HTTP OPTIONS /api/orders responded 204 in 0.9372 ms
+2026-03-25 04:31:49.085 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders - 204 null null 2.5434ms
+2026-03-25 04:31:49.089 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/api/orders - application/json 105
+2026-03-25 04:31:49.089 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:49.091 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.Create (RestaurantPOS.API)'
+2026-03-25 04:31:49.101 +01:00 [INF] Route matched with {action = "Create", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]] Create(RestaurantPOS.Application.DTOs.Orders.CreateOrderDto) on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:31:49.326 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId]
+FROM [Tables] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-25 04:31:49.452 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__today_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Orders] AS [o]
+WHERE CONVERT(date, [o].[CreatedAt]) = @__today_0
+2026-03-25 04:31:49.524 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__itemDto_ProductId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[DisplayOrder], [t].[ImageUrl], [t].[IsActive], [t].[IsAvailable], [t].[Name], [t].[PreparationTime], [t].[Price], [t].[UpdatedAt], [p0].[Id], [p0].[CreatedAt], [p0].[IsActive], [p0].[Name], [p0].[PriceAdjustment], [p0].[ProductId], [p0].[UpdatedAt]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt]
+    FROM [Products] AS [p]
+    WHERE [p].[Id] = @__itemDto_ProductId_0
+) AS [t]
+LEFT JOIN [ProductModifiers] AS [p0] ON [t].[Id] = [p0].[ProductId]
+ORDER BY [t].[Id]
+2026-03-25 04:31:49.535 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__itemDto_ProductId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[DisplayOrder], [t].[ImageUrl], [t].[IsActive], [t].[IsAvailable], [t].[Name], [t].[PreparationTime], [t].[Price], [t].[UpdatedAt], [p0].[Id], [p0].[CreatedAt], [p0].[IsActive], [p0].[Name], [p0].[PriceAdjustment], [p0].[ProductId], [p0].[UpdatedAt]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt]
+    FROM [Products] AS [p]
+    WHERE [p].[Id] = @__itemDto_ProductId_0
+) AS [t]
+LEFT JOIN [ProductModifiers] AS [p0] ON [t].[Id] = [p0].[ProductId]
+ORDER BY [t].[Id]
+2026-03-25 04:31:49.636 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 200), @p2='?' (Size = 50), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = Int32), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (Precision = 5) (Scale = 4) (DbType = Decimal), @p14='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p15='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Int32), @p20='?' (DbType = Int32), @p18='?' (Size = 50), @p19='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([CreatedAt], [CustomerName], [CustomerPhone], [DiscountAmount], [DiscountPercent], [IsActive], [Notes], [OrderNumber], [OrderType], [Status], [Subtotal], [TableId], [TaxAmount], [TaxRate], [TipAmount], [Total], [UpdatedAt], [WaiterId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+UPDATE [Tables] SET [Status] = @p18, [UpdatedAt] = @p19
+OUTPUT 1
+WHERE [Id] = @p20;
+2026-03-25 04:31:49.691 +01:00 [INF] Executed DbCommand (21ms) [Parameters=[@p21='?' (DbType = DateTime2), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Int32), @p25='?' (DbType = Int32), @p26='?' (DbType = Int32), @p27='?' (DbType = DateTime2), @p28='?' (DbType = DateTime2), @p29='?' (Size = 50), @p30='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p31='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p32='?' (DbType = DateTime2), @p33='?' (DbType = DateTime2), @p34='?' (DbType = Boolean), @p35='?' (Size = 4000), @p36='?' (DbType = Int32), @p37='?' (DbType = Int32), @p38='?' (DbType = Int32), @p39='?' (DbType = DateTime2), @p40='?' (DbType = DateTime2), @p41='?' (Size = 50), @p42='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p43='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p44='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [OrderItems] USING (
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, 0),
+(@p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40, @p41, @p42, @p43, @p44, 1)) AS i ([CreatedAt], [IsActive], [Notes], [OrderId], [ProductId], [Quantity], [ReadyAt], [SentToKitchenAt], [Status], [Subtotal], [UnitPrice], [UpdatedAt], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CreatedAt], [IsActive], [Notes], [OrderId], [ProductId], [Quantity], [ReadyAt], [SentToKitchenAt], [Status], [Subtotal], [UnitPrice], [UpdatedAt])
+VALUES (i.[CreatedAt], i.[IsActive], i.[Notes], i.[OrderId], i.[ProductId], i.[Quantity], i.[ReadyAt], i.[SentToKitchenAt], i.[Status], i.[Subtotal], i.[UnitPrice], i.[UpdatedAt])
+OUTPUT INSERTED.[Id], i._Position;
+2026-03-25 04:31:49.738 +01:00 [INF] Executed DbCommand (30ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t1].[Id], [t1].[CreatedAt], [t1].[CustomerName], [t1].[CustomerPhone], [t1].[DiscountAmount], [t1].[DiscountPercent], [t1].[IsActive], [t1].[Notes], [t1].[OrderNumber], [t1].[OrderType], [t1].[Status], [t1].[Subtotal], [t1].[TableId], [t1].[TaxAmount], [t1].[TaxRate], [t1].[TipAmount], [t1].[Total], [t1].[UpdatedAt], [t1].[WaiterId], [t1].[Id0], [t1].[Capacity], [t1].[CreatedAt0], [t1].[IsActive0], [t1].[Number], [t1].[PositionX], [t1].[PositionY], [t1].[Shape], [t1].[Status0], [t1].[UpdatedAt0], [t1].[ZoneId], [t1].[Id1], [t1].[CreatedAt1], [t1].[Description], [t1].[IsActive1], [t1].[Name], [t1].[UpdatedAt1], [t1].[Id2], [t1].[CreatedAt2], [t1].[Email], [t1].[FirstName], [t1].[IsActive2], [t1].[LastLoginAt], [t1].[LastName], [t1].[PasswordHash], [t1].[Pin], [t1].[RefreshToken], [t1].[RefreshTokenExpiry], [t1].[Role], [t1].[UpdatedAt2], [t2].[Id], [t2].[CreatedAt], [t2].[IsActive], [t2].[Notes], [t2].[OrderId], [t2].[ProductId], [t2].[Quantity], [t2].[ReadyAt], [t2].[SentToKitchenAt], [t2].[Status], [t2].[Subtotal], [t2].[UnitPrice], [t2].[UpdatedAt], [t2].[Id0], [t2].[CategoryId], [t2].[CreatedAt0], [t2].[Description], [t2].[DisplayOrder], [t2].[ImageUrl], [t2].[IsActive0], [t2].[IsAvailable], [t2].[Name], [t2].[PreparationTime], [t2].[Price], [t2].[UpdatedAt0], [t2].[Id1], [t2].[CreatedAt1], [t2].[Name0], [t2].[OrderItemId], [t2].[PriceAdjustment], [t2].[ProductModifierId]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id] AS [Id0], [t].[Capacity], [t].[CreatedAt] AS [CreatedAt0], [t].[IsActive] AS [IsActive0], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status] AS [Status0], [t].[UpdatedAt] AS [UpdatedAt0], [t].[ZoneId], [t0].[Id] AS [Id1], [t0].[CreatedAt] AS [CreatedAt1], [t0].[Description], [t0].[IsActive] AS [IsActive1], [t0].[Name], [t0].[UpdatedAt] AS [UpdatedAt1], [u].[Id] AS [Id2], [u].[CreatedAt] AS [CreatedAt2], [u].[Email], [u].[FirstName], [u].[IsActive] AS [IsActive2], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt] AS [UpdatedAt2]
+    FROM [Orders] AS [o]
+    LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+    LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+    INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+    WHERE [o].[Id] = @__id_0 AND [o].[IsActive] = CAST(1 AS bit)
+) AS [t1]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t2] ON [t1].[Id] = [t2].[OrderId]
+ORDER BY [t1].[Id], [t1].[Id0], [t1].[Id1], [t1].[Id2], [t2].[Id], [t2].[Id0]
+2026-03-25 04:31:49.743 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'RestaurantPOS.Application.DTOs.Orders.OrderResponseDto'.
+2026-03-25 04:31:49.750 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.Create (RestaurantPOS.API) in 648.2395ms
+2026-03-25 04:31:49.750 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.Create (RestaurantPOS.API)'
+2026-03-25 04:31:49.751 +01:00 [INF] HTTP POST /api/orders responded 201 in 661.3181 ms
+2026-03-25 04:31:49.753 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/api/orders - 201 null application/json; charset=utf-8 663.8373ms
+2026-03-25 04:31:49.760 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/8/send-to-kitchen - null null
+2026-03-25 04:31:49.761 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:49.761 +01:00 [INF] HTTP OPTIONS /api/orders/8/send-to-kitchen responded 204 in 0.7531 ms
+2026-03-25 04:31:49.762 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/8/send-to-kitchen - 204 null null 2.3155ms
+2026-03-25 04:31:49.769 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/api/orders/8/send-to-kitchen - application/json 2
+2026-03-25 04:31:49.769 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:49.771 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.SendToKitchen (RestaurantPOS.API)'
+2026-03-25 04:31:49.781 +01:00 [INF] Route matched with {action = "SendToKitchen", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]] SendToKitchen(Int32) on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:31:49.806 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CustomerName], [t].[CustomerPhone], [t].[DiscountAmount], [t].[DiscountPercent], [t].[IsActive], [t].[Notes], [t].[OrderNumber], [t].[OrderType], [t].[Status], [t].[Subtotal], [t].[TableId], [t].[TaxAmount], [t].[TaxRate], [t].[TipAmount], [t].[Total], [t].[UpdatedAt], [t].[WaiterId], [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId]
+    FROM [Orders] AS [o]
+    WHERE [o].[Id] = @__orderId_0
+) AS [t]
+LEFT JOIN [OrderItems] AS [o0] ON [t].[Id] = [o0].[OrderId]
+ORDER BY [t].[Id]
+2026-03-25 04:31:49.826 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 50), @p2='?' (DbType = DateTime2), @p7='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (DbType = DateTime2), @p10='?' (DbType = Int32), @p8='?' (Size = 50), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [OrderItems] SET [SentToKitchenAt] = @p0, [Status] = @p1, [UpdatedAt] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+UPDATE [OrderItems] SET [SentToKitchenAt] = @p4, [Status] = @p5, [UpdatedAt] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+UPDATE [Orders] SET [Status] = @p8, [UpdatedAt] = @p9
+OUTPUT 1
+WHERE [Id] = @p10;
+2026-03-25 04:31:49.840 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t1].[Id], [t1].[CreatedAt], [t1].[CustomerName], [t1].[CustomerPhone], [t1].[DiscountAmount], [t1].[DiscountPercent], [t1].[IsActive], [t1].[Notes], [t1].[OrderNumber], [t1].[OrderType], [t1].[Status], [t1].[Subtotal], [t1].[TableId], [t1].[TaxAmount], [t1].[TaxRate], [t1].[TipAmount], [t1].[Total], [t1].[UpdatedAt], [t1].[WaiterId], [t1].[Id0], [t1].[Capacity], [t1].[CreatedAt0], [t1].[IsActive0], [t1].[Number], [t1].[PositionX], [t1].[PositionY], [t1].[Shape], [t1].[Status0], [t1].[UpdatedAt0], [t1].[ZoneId], [t1].[Id1], [t1].[CreatedAt1], [t1].[Description], [t1].[IsActive1], [t1].[Name], [t1].[UpdatedAt1], [t1].[Id2], [t1].[CreatedAt2], [t1].[Email], [t1].[FirstName], [t1].[IsActive2], [t1].[LastLoginAt], [t1].[LastName], [t1].[PasswordHash], [t1].[Pin], [t1].[RefreshToken], [t1].[RefreshTokenExpiry], [t1].[Role], [t1].[UpdatedAt2], [t2].[Id], [t2].[CreatedAt], [t2].[IsActive], [t2].[Notes], [t2].[OrderId], [t2].[ProductId], [t2].[Quantity], [t2].[ReadyAt], [t2].[SentToKitchenAt], [t2].[Status], [t2].[Subtotal], [t2].[UnitPrice], [t2].[UpdatedAt], [t2].[Id0], [t2].[CategoryId], [t2].[CreatedAt0], [t2].[Description], [t2].[DisplayOrder], [t2].[ImageUrl], [t2].[IsActive0], [t2].[IsAvailable], [t2].[Name], [t2].[PreparationTime], [t2].[Price], [t2].[UpdatedAt0], [t2].[Id1], [t2].[CreatedAt1], [t2].[Name0], [t2].[OrderItemId], [t2].[PriceAdjustment], [t2].[ProductModifierId]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id] AS [Id0], [t].[Capacity], [t].[CreatedAt] AS [CreatedAt0], [t].[IsActive] AS [IsActive0], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status] AS [Status0], [t].[UpdatedAt] AS [UpdatedAt0], [t].[ZoneId], [t0].[Id] AS [Id1], [t0].[CreatedAt] AS [CreatedAt1], [t0].[Description], [t0].[IsActive] AS [IsActive1], [t0].[Name], [t0].[UpdatedAt] AS [UpdatedAt1], [u].[Id] AS [Id2], [u].[CreatedAt] AS [CreatedAt2], [u].[Email], [u].[FirstName], [u].[IsActive] AS [IsActive2], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt] AS [UpdatedAt2]
+    FROM [Orders] AS [o]
+    LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+    LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+    INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+    WHERE [o].[Id] = @__id_0 AND [o].[IsActive] = CAST(1 AS bit)
+) AS [t1]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t2] ON [t1].[Id] = [t2].[OrderId]
+ORDER BY [t1].[Id], [t1].[Id0], [t1].[Id1], [t1].[Id2], [t2].[Id], [t2].[Id0]
+2026-03-25 04:31:49.843 +01:00 [INF] Executing OkObjectResult, writing value of type 'RestaurantPOS.Application.DTOs.Orders.OrderResponseDto'.
+2026-03-25 04:31:49.846 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.SendToKitchen (RestaurantPOS.API) in 64.0946ms
+2026-03-25 04:31:49.846 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.SendToKitchen (RestaurantPOS.API)'
+2026-03-25 04:31:49.847 +01:00 [INF] HTTP POST /api/orders/8/send-to-kitchen responded 200 in 77.2303 ms
+2026-03-25 04:31:49.848 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/api/orders/8/send-to-kitchen - 200 null application/json; charset=utf-8 79.0755ms
+2026-03-25 04:31:49.894 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/8 - null null
+2026-03-25 04:31:49.894 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:49.896 +01:00 [INF] HTTP OPTIONS /api/orders/8 responded 204 in 1.1687 ms
+2026-03-25 04:31:49.899 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/8 - 204 null null 5.3303ms
+2026-03-25 04:31:49.907 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/8 - null null
+2026-03-25 04:31:49.908 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:49.910 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetById (RestaurantPOS.API)'
+2026-03-25 04:31:49.928 +01:00 [INF] Route matched with {action = "GetById", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]] GetById(Int32) on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:31:49.940 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t1].[Id], [t1].[CreatedAt], [t1].[CustomerName], [t1].[CustomerPhone], [t1].[DiscountAmount], [t1].[DiscountPercent], [t1].[IsActive], [t1].[Notes], [t1].[OrderNumber], [t1].[OrderType], [t1].[Status], [t1].[Subtotal], [t1].[TableId], [t1].[TaxAmount], [t1].[TaxRate], [t1].[TipAmount], [t1].[Total], [t1].[UpdatedAt], [t1].[WaiterId], [t1].[Id0], [t1].[Capacity], [t1].[CreatedAt0], [t1].[IsActive0], [t1].[Number], [t1].[PositionX], [t1].[PositionY], [t1].[Shape], [t1].[Status0], [t1].[UpdatedAt0], [t1].[ZoneId], [t1].[Id1], [t1].[CreatedAt1], [t1].[Description], [t1].[IsActive1], [t1].[Name], [t1].[UpdatedAt1], [t1].[Id2], [t1].[CreatedAt2], [t1].[Email], [t1].[FirstName], [t1].[IsActive2], [t1].[LastLoginAt], [t1].[LastName], [t1].[PasswordHash], [t1].[Pin], [t1].[RefreshToken], [t1].[RefreshTokenExpiry], [t1].[Role], [t1].[UpdatedAt2], [t2].[Id], [t2].[CreatedAt], [t2].[IsActive], [t2].[Notes], [t2].[OrderId], [t2].[ProductId], [t2].[Quantity], [t2].[ReadyAt], [t2].[SentToKitchenAt], [t2].[Status], [t2].[Subtotal], [t2].[UnitPrice], [t2].[UpdatedAt], [t2].[Id0], [t2].[CategoryId], [t2].[CreatedAt0], [t2].[Description], [t2].[DisplayOrder], [t2].[ImageUrl], [t2].[IsActive0], [t2].[IsAvailable], [t2].[Name], [t2].[PreparationTime], [t2].[Price], [t2].[UpdatedAt0], [t2].[Id1], [t2].[CreatedAt1], [t2].[Name0], [t2].[OrderItemId], [t2].[PriceAdjustment], [t2].[ProductModifierId]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id] AS [Id0], [t].[Capacity], [t].[CreatedAt] AS [CreatedAt0], [t].[IsActive] AS [IsActive0], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status] AS [Status0], [t].[UpdatedAt] AS [UpdatedAt0], [t].[ZoneId], [t0].[Id] AS [Id1], [t0].[CreatedAt] AS [CreatedAt1], [t0].[Description], [t0].[IsActive] AS [IsActive1], [t0].[Name], [t0].[UpdatedAt] AS [UpdatedAt1], [u].[Id] AS [Id2], [u].[CreatedAt] AS [CreatedAt2], [u].[Email], [u].[FirstName], [u].[IsActive] AS [IsActive2], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt] AS [UpdatedAt2]
+    FROM [Orders] AS [o]
+    LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+    LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+    INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+    WHERE [o].[Id] = @__id_0 AND [o].[IsActive] = CAST(1 AS bit)
+) AS [t1]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t2] ON [t1].[Id] = [t2].[OrderId]
+ORDER BY [t1].[Id], [t1].[Id0], [t1].[Id1], [t1].[Id2], [t2].[Id], [t2].[Id0]
+2026-03-25 04:31:49.955 +01:00 [INF] Executing OkObjectResult, writing value of type 'RestaurantPOS.Application.DTOs.Orders.OrderResponseDto'.
+2026-03-25 04:31:49.957 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetById (RestaurantPOS.API) in 28.7345ms
+2026-03-25 04:31:49.957 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetById (RestaurantPOS.API)'
+2026-03-25 04:31:49.958 +01:00 [INF] HTTP GET /api/orders/8 responded 200 in 49.6655 ms
+2026-03-25 04:31:49.958 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/8 - 200 null application/json; charset=utf-8 51.039ms
+2026-03-25 04:31:55.023 +01:00 [INF] Connection lWBuXMReTQA1yh9T9h6nyQ joined group kitchen
+2026-03-25 04:31:55.045 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:31:55.046 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:55.047 +01:00 [INF] HTTP OPTIONS /api/orders/kitchen responded 204 in 0.7766 ms
+2026-03-25 04:31:55.049 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - 204 null null 3.8948ms
+2026-03-25 04:31:55.058 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:31:55.059 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:31:55.060 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:31:55.061 +01:00 [INF] Route matched with {action = "GetKitchenOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetKitchenOrders() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:31:55.189 +01:00 [INF] Executed DbCommand (118ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] IN (N'EnPreparacion', N'Listo')
+ORDER BY [o].[CreatedAt], [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:31:55.195 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:31:55.202 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API) in 140.7424ms
+2026-03-25 04:31:55.203 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:31:55.204 +01:00 [INF] HTTP GET /api/orders/kitchen responded 200 in 145.3324 ms
+2026-03-25 04:31:55.212 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/kitchen - 200 null application/json; charset=utf-8 151.2933ms
+2026-03-25 04:32:49.842 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/auth/login - null null
+2026-03-25 04:32:49.843 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:32:49.843 +01:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.4952 ms
+2026-03-25 04:32:49.844 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/auth/login - 204 null null 1.8094ms
+2026-03-25 04:32:49.848 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/api/auth/login - application/json 60
+2026-03-25 04:32:49.849 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:32:49.850 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API)'
+2026-03-25 04:32:49.851 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Auth.TokenResponseDto]] Login(RestaurantPOS.Application.DTOs.Auth.LoginDto) on controller RestaurantPOS.API.Controllers.AuthController (RestaurantPOS.API).
+2026-03-25 04:32:49.868 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__ToLower_0='?' (Size = 200)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE LOWER([u].[Email]) = @__ToLower_0
+2026-03-25 04:32:50.309 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 200), @p2='?' (Size = 100), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 100), @p6='?' (Size = 500), @p7='?' (Size = 10), @p8='?' (Size = 500), @p9='?' (DbType = DateTime2), @p10='?' (Size = 50), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [CreatedAt] = @p0, [Email] = @p1, [FirstName] = @p2, [IsActive] = @p3, [LastLoginAt] = @p4, [LastName] = @p5, [PasswordHash] = @p6, [Pin] = @p7, [RefreshToken] = @p8, [RefreshTokenExpiry] = @p9, [Role] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2026-03-25 04:32:50.312 +01:00 [INF] Executing OkObjectResult, writing value of type 'RestaurantPOS.Application.DTOs.Auth.TokenResponseDto'.
+2026-03-25 04:32:50.314 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API) in 463.1217ms
+2026-03-25 04:32:50.314 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API)'
+2026-03-25 04:32:50.314 +01:00 [INF] HTTP POST /api/auth/login responded 200 in 465.7829 ms
+2026-03-25 04:32:50.315 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/api/auth/login - 200 null application/json; charset=utf-8 467.0533ms
+2026-03-25 04:34:09.841 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/auth/login - null null
+2026-03-25 04:34:09.841 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:34:09.842 +01:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.2184 ms
+2026-03-25 04:34:09.842 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/auth/login - 204 null null 1.375ms
+2026-03-25 04:34:09.846 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/api/auth/login - application/json 60
+2026-03-25 04:34:09.846 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:34:09.847 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API)'
+2026-03-25 04:34:09.847 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantPOS.Application.DTOs.Auth.TokenResponseDto]] Login(RestaurantPOS.Application.DTOs.Auth.LoginDto) on controller RestaurantPOS.API.Controllers.AuthController (RestaurantPOS.API).
+2026-03-25 04:34:09.872 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__ToLower_0='?' (Size = 200)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE LOWER([u].[Email]) = @__ToLower_0
+2026-03-25 04:34:10.313 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 200), @p2='?' (Size = 100), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 100), @p6='?' (Size = 500), @p7='?' (Size = 10), @p8='?' (Size = 500), @p9='?' (DbType = DateTime2), @p10='?' (Size = 50), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [CreatedAt] = @p0, [Email] = @p1, [FirstName] = @p2, [IsActive] = @p3, [LastLoginAt] = @p4, [LastName] = @p5, [PasswordHash] = @p6, [Pin] = @p7, [RefreshToken] = @p8, [RefreshTokenExpiry] = @p9, [Role] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2026-03-25 04:34:10.316 +01:00 [INF] Executing OkObjectResult, writing value of type 'RestaurantPOS.Application.DTOs.Auth.TokenResponseDto'.
+2026-03-25 04:34:10.319 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API) in 471.0279ms
+2026-03-25 04:34:10.319 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.AuthController.Login (RestaurantPOS.API)'
+2026-03-25 04:34:10.319 +01:00 [INF] HTTP POST /api/auth/login responded 200 in 472.8851 ms
+2026-03-25 04:34:10.320 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/api/auth/login - 200 null application/json; charset=utf-8 474.675ms
+2026-03-25 04:35:25.685 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:35:25.685 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:35:25.686 +01:00 [INF] HTTP OPTIONS /api/orders/kitchen responded 204 in 0.2312 ms
+2026-03-25 04:35:25.686 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/api/orders/kitchen - 204 null null 1.067ms
+2026-03-25 04:35:25.694 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44374/api/orders/kitchen - null null
+2026-03-25 04:35:25.694 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:35:25.695 +01:00 [INF] Executing endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:35:25.695 +01:00 [INF] Route matched with {action = "GetKitchenOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto]]] GetKitchenOrders() on controller RestaurantPOS.API.Controllers.OrdersController (RestaurantPOS.API).
+2026-03-25 04:35:25.707 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-03-25 04:35:25.709 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:35:25.711 +01:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 2.1023 ms
+2026-03-25 04:35:25.711 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 6.2188ms
+2026-03-25 04:35:25.729 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-03-25 04:35:25.730 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:35:25.731 +01:00 [INF] Executing endpoint '/hubs/orders/negotiate'
+2026-03-25 04:35:25.732 +01:00 [INF] Executed endpoint '/hubs/orders/negotiate'
+2026-03-25 04:35:25.732 +01:00 [INF] HTTP POST /hubs/orders/negotiate responded 200 in 2.7858 ms
+2026-03-25 04:35:25.733 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 200 316 application/json 3.9935ms
+2026-03-25 04:35:25.750 +01:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[CustomerName], [o].[CustomerPhone], [o].[DiscountAmount], [o].[DiscountPercent], [o].[IsActive], [o].[Notes], [o].[OrderNumber], [o].[OrderType], [o].[Status], [o].[Subtotal], [o].[TableId], [o].[TaxAmount], [o].[TaxRate], [o].[TipAmount], [o].[Total], [o].[UpdatedAt], [o].[WaiterId], [t].[Id], [t].[Capacity], [t].[CreatedAt], [t].[IsActive], [t].[Number], [t].[PositionX], [t].[PositionY], [t].[Shape], [t].[Status], [t].[UpdatedAt], [t].[ZoneId], [t0].[Id], [t0].[CreatedAt], [t0].[Description], [t0].[IsActive], [t0].[Name], [t0].[UpdatedAt], [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Pin], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UpdatedAt], [t1].[Id], [t1].[CreatedAt], [t1].[IsActive], [t1].[Notes], [t1].[OrderId], [t1].[ProductId], [t1].[Quantity], [t1].[ReadyAt], [t1].[SentToKitchenAt], [t1].[Status], [t1].[Subtotal], [t1].[UnitPrice], [t1].[UpdatedAt], [t1].[Id0], [t1].[CategoryId], [t1].[CreatedAt0], [t1].[Description], [t1].[DisplayOrder], [t1].[ImageUrl], [t1].[IsActive0], [t1].[IsAvailable], [t1].[Name], [t1].[PreparationTime], [t1].[Price], [t1].[UpdatedAt0], [t1].[Id1], [t1].[CreatedAt1], [t1].[Name0], [t1].[OrderItemId], [t1].[PriceAdjustment], [t1].[ProductModifierId]
+FROM [Orders] AS [o]
+LEFT JOIN [Tables] AS [t] ON [o].[TableId] = [t].[Id]
+LEFT JOIN [TableZones] AS [t0] ON [t].[ZoneId] = [t0].[Id]
+INNER JOIN [Users] AS [u] ON [o].[WaiterId] = [u].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[CreatedAt], [o0].[IsActive], [o0].[Notes], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[ReadyAt], [o0].[SentToKitchenAt], [o0].[Status], [o0].[Subtotal], [o0].[UnitPrice], [o0].[UpdatedAt], [p].[Id] AS [Id0], [p].[CategoryId], [p].[CreatedAt] AS [CreatedAt0], [p].[Description], [p].[DisplayOrder], [p].[ImageUrl], [p].[IsActive] AS [IsActive0], [p].[IsAvailable], [p].[Name], [p].[PreparationTime], [p].[Price], [p].[UpdatedAt] AS [UpdatedAt0], [o1].[Id] AS [Id1], [o1].[CreatedAt] AS [CreatedAt1], [o1].[Name] AS [Name0], [o1].[OrderItemId], [o1].[PriceAdjustment], [o1].[ProductModifierId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[Id]
+    LEFT JOIN [OrderItemModifiers] AS [o1] ON [o0].[Id] = [o1].[OrderItemId]
+) AS [t1] ON [o].[Id] = [t1].[OrderId]
+WHERE [o].[IsActive] = CAST(1 AS bit) AND [o].[Status] IN (N'EnPreparacion', N'Listo')
+ORDER BY [o].[CreatedAt], [o].[Id], [t].[Id], [t0].[Id], [u].[Id], [t1].[Id], [t1].[Id0]
+2026-03-25 04:35:25.772 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantPOS.Application.DTOs.Orders.OrderResponseDto, RestaurantPOS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 04:35:25.780 +01:00 [INF] Executed action RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API) in 84.8468ms
+2026-03-25 04:35:25.781 +01:00 [INF] Executed endpoint 'RestaurantPOS.API.Controllers.OrdersController.GetKitchenOrders (RestaurantPOS.API)'
+2026-03-25 04:35:25.781 +01:00 [INF] HTTP GET /api/orders/kitchen responded 200 in 86.9670 ms
+2026-03-25 04:35:25.784 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44374/api/orders/kitchen - 200 null application/json; charset=utf-8 90.5168ms
+2026-03-25 04:35:26.065 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44374/hubs/orders?id=3kKs57iDr7MGfIOybxfY8g&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJjb2NpbmVyb0ByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb2NpbmVybyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJKdWFuIFBlcmV6IiwianRpIjoiZmU5ZWNhZjctMzA3Ny00MzMyLWI5YzItYmQ1NTZiMzZjNDc3IiwiZXhwIjoxNzc0NDM4NDUwLCJpc3MiOiJSZXN0YXVyYW50UE9TLkFQSSIsImF1ZCI6IlJlc3RhdXJhbnRQT1MuQ2xpZW50In0.PExKqGfaJhh0FjLvdOiWy9fRha1Ts8AIq-KQQQg8rJ0 - null null
+2026-03-25 04:35:26.066 +01:00 [INF] CORS policy execution successful.
+2026-03-25 04:35:26.067 +01:00 [INF] Executing endpoint '/hubs/orders'
+2026-03-25 04:35:26.094 +01:00 [INF] Client connected: QE9mnLARegbpiKU16eo3qA
+2026-03-25 04:38:44.383 +01:00 [INF] Client disconnected: QE9mnLARegbpiKU16eo3qA
+2026-03-25 04:38:44.386 +01:00 [INF] Executed endpoint '/hubs/orders'
+2026-03-25 04:38:44.387 +01:00 [INF] HTTP GET /hubs/orders responded 101 in 198321.5164 ms
+2026-03-25 04:38:44.388 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44374/hubs/orders?id=3kKs57iDr7MGfIOybxfY8g&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJjb2NpbmVyb0ByZXN0YXVyYW50ZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb2NpbmVybyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJKdWFuIFBlcmV6IiwianRpIjoiZmU5ZWNhZjctMzA3Ny00MzMyLWI5YzItYmQ1NTZiMzZjNDc3IiwiZXhwIjoxNzc0NDM4NDUwLCJpc3MiOiJSZXN0YXVyYW50UE9TLkFQSSIsImF1ZCI6IlJlc3RhdXJhbnRQT1MuQ2xpZW50In0.PExKqGfaJhh0FjLvdOiWy9fRha1Ts8AIq-KQQQg8rJ0 - 101 null null 198323.3473ms
+2026-03-25 04:38:46.860 +01:00 [INF] Client disconnected: 53uylBOrptKgu3XQElBa7Q
+2026-03-25 04:38:46.862 +01:00 [INF] Executed endpoint '/hubs/orders'
+2026-03-25 04:38:46.862 +01:00 [INF] HTTP GET /hubs/orders responded 101 in 438771.3327 ms
+2026-03-25 04:38:46.863 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44374/hubs/orders?id=hnf0HxNGhcL-bj_Njmx0BQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZXNlcm9AcmVzdGF1cmFudGUuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWVzZXJvIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Ik1hcsOtYSBMw7NwZXoiLCJqdGkiOiI4OWI4NmM2Zi04Zjc1LTQwZmUtOWRkMi1jMjFhN2EzNDJhYTEiLCJleHAiOjE3NzQ0MzgyODcsImlzcyI6IlJlc3RhdXJhbnRQT1MuQVBJIiwiYXVkIjoiUmVzdGF1cmFudFBPUy5DbGllbnQifQ.y2utW8kih3h03erXLcxvrPo8xQ0q73_ZOgqDE5O8wlM - 101 null null 438772.9878ms

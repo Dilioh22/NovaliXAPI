@@ -1,0 +1,12 @@
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\bin\Debug\net8.0\RestaurantPOS.Domain.deps.json
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\bin\Debug\net8.0\RestaurantPOS.Domain.dll
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\bin\Debug\net8.0\RestaurantPOS.Domain.pdb
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\RestaurantPOS.Domain.csproj.AssemblyReference.cache
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\RestaurantPOS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\RestaurantPOS.Domain.AssemblyInfoInputs.cache
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\RestaurantPOS.Domain.AssemblyInfo.cs
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\RestaurantPOS.Domain.csproj.CoreCompileInputs.cache
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\RestaurantPOS.Domain.dll
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\refint\RestaurantPOS.Domain.dll
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\RestaurantPOS.Domain.pdb
+C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Domain\obj\Debug\net8.0\ref\RestaurantPOS.Domain.dll

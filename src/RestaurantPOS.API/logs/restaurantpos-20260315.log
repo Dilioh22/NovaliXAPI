@@ -1,0 +1,287 @@
+2026-03-15 22:47:03.962 -06:00 [INF] Executed DbCommand (622ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [RestaurantPOS_Dev];
+2026-03-15 22:47:04.472 -06:00 [INF] Executed DbCommand (315ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [RestaurantPOS_Dev] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2026-03-15 22:47:04.601 -06:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-15 22:47:04.867 -06:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2026-03-15 22:47:04.890 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-15 22:47:04.993 -06:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-15 22:47:05.030 -06:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-15 22:47:05.112 -06:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-15 22:47:05.875 -06:00 [ERR] Failed executing DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [PaymentMethods] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-15 22:47:05.941 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RestaurantPOS.Infrastructure.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:7dbe6271-c472-4ad0-a5f6-a79f09ba255a
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:7dbe6271-c472-4ad0-a5f6-a79f09ba255a
+Error Number:208,State:1,Class:16
+2026-03-15 22:47:06.383 -06:00 [FTL] Error seeding database.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at RestaurantPOS.Infrastructure.Data.Seed.DataSeeder.SeedPaymentMethodsAsync(AppDbContext context) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Infrastructure\Data\Seed\DataSeeder.cs:line 22
+   at RestaurantPOS.Infrastructure.Data.Seed.DataSeeder.SeedAsync(AppDbContext context) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Infrastructure\Data\Seed\DataSeeder.cs:line 13
+   at Program.<Main>$(String[] args) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.API\Program.cs:line 131
+ClientConnectionId:7dbe6271-c472-4ad0-a5f6-a79f09ba255a
+Error Number:208,State:1,Class:16
+2026-03-15 22:47:07.268 -06:00 [INF] User profile is available. Using 'C:\Users\dilio\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-15 22:47:08.192 -06:00 [INF] Now listening on: https://localhost:56635
+2026-03-15 22:47:08.198 -06:00 [INF] Now listening on: http://localhost:56636
+2026-03-15 22:47:08.472 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-15 22:47:08.479 -06:00 [INF] Hosting environment: Development
+2026-03-15 22:47:08.484 -06:00 [INF] Content root path: C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.API
+2026-03-15 22:47:11.331 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/ - null null
+2026-03-15 22:47:12.566 -06:00 [INF] HTTP GET / responded 404 in 407.6860 ms
+2026-03-15 22:47:12.602 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/ - 404 0 null 1301.6683ms
+2026-03-15 22:47:12.634 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:56635/, Response status code: 404
+2026-03-15 22:48:04.948 -06:00 [INF] Executed DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-15 22:48:05.261 -06:00 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-15 22:48:05.301 -06:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-15 22:48:05.320 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-15 22:48:05.393 -06:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-15 22:48:05.474 -06:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-15 22:48:06.379 -06:00 [ERR] Failed executing DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [PaymentMethods] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-15 22:48:06.456 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RestaurantPOS.Infrastructure.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:194533ed-f5c8-4fef-863b-5570ab83398a
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:194533ed-f5c8-4fef-863b-5570ab83398a
+Error Number:208,State:1,Class:16
+2026-03-15 22:48:06.867 -06:00 [FTL] Error seeding database.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at RestaurantPOS.Infrastructure.Data.Seed.DataSeeder.SeedPaymentMethodsAsync(AppDbContext context) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Infrastructure\Data\Seed\DataSeeder.cs:line 24
+   at RestaurantPOS.Infrastructure.Data.Seed.DataSeeder.SeedAsync(AppDbContext context) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Infrastructure\Data\Seed\DataSeeder.cs:line 15
+   at Program.<Main>$(String[] args) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.API\Program.cs:line 131
+ClientConnectionId:194533ed-f5c8-4fef-863b-5570ab83398a
+Error Number:208,State:1,Class:16
+2026-03-15 22:48:07.647 -06:00 [INF] User profile is available. Using 'C:\Users\dilio\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-15 22:48:08.467 -06:00 [INF] Now listening on: https://localhost:56635
+2026-03-15 22:48:08.473 -06:00 [INF] Now listening on: http://localhost:56636
+2026-03-15 22:48:08.752 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-15 22:48:08.761 -06:00 [INF] Hosting environment: Development
+2026-03-15 22:48:08.767 -06:00 [INF] Content root path: C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.API
+2026-03-15 22:48:10.394 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/ - null null
+2026-03-15 22:48:11.288 -06:00 [INF] HTTP GET / responded 404 in 283.9383 ms
+2026-03-15 22:48:11.320 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/ - 404 0 null 958.3965ms
+2026-03-15 22:48:11.346 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:56635/, Response status code: 404
+2026-03-15 22:48:19.679 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/ - null null
+2026-03-15 22:48:19.732 -06:00 [INF] HTTP GET / responded 404 in 5.2633 ms
+2026-03-15 22:48:19.744 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/ - 404 0 null 66.6135ms
+2026-03-15 22:48:19.761 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:56635/, Response status code: 404
+2026-03-15 22:49:02.846 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/ - null null
+2026-03-15 22:49:02.905 -06:00 [INF] HTTP GET / responded 404 in 12.3878 ms
+2026-03-15 22:49:02.917 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/ - 404 0 null 70.9867ms
+2026-03-15 22:49:02.933 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:56635/, Response status code: 404
+2026-03-15 22:53:53.080 -06:00 [INF] Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-15 22:53:53.341 -06:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-15 22:53:53.375 -06:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-15 22:53:53.395 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-15 22:53:53.453 -06:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-15 22:53:53.516 -06:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-15 22:53:54.164 -06:00 [ERR] Failed executing DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [PaymentMethods] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-15 22:53:54.221 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RestaurantPOS.Infrastructure.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:48fef412-284b-40a3-8745-2be232a5ef9c
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:48fef412-284b-40a3-8745-2be232a5ef9c
+Error Number:208,State:1,Class:16
+2026-03-15 22:53:54.388 -06:00 [FTL] Error seeding database.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'PaymentMethods'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at RestaurantPOS.Infrastructure.Data.Seed.DataSeeder.SeedPaymentMethodsAsync(AppDbContext context) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Infrastructure\Data\Seed\DataSeeder.cs:line 24
+   at RestaurantPOS.Infrastructure.Data.Seed.DataSeeder.SeedAsync(AppDbContext context) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.Infrastructure\Data\Seed\DataSeeder.cs:line 15
+   at Program.<Main>$(String[] args) in C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.API\Program.cs:line 131
+ClientConnectionId:48fef412-284b-40a3-8745-2be232a5ef9c
+Error Number:208,State:1,Class:16
+2026-03-15 22:53:54.938 -06:00 [INF] User profile is available. Using 'C:\Users\dilio\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-15 22:53:55.504 -06:00 [INF] Now listening on: https://localhost:56635
+2026-03-15 22:53:55.511 -06:00 [INF] Now listening on: http://localhost:56636
+2026-03-15 22:53:55.731 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-15 22:53:55.739 -06:00 [INF] Hosting environment: Development
+2026-03-15 22:53:55.746 -06:00 [INF] Content root path: C:\Sistemas\Restaurante\RestaurantPOS\src\RestaurantPOS.API
+2026-03-15 22:53:56.410 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/ - null null
+2026-03-15 22:53:57.196 -06:00 [INF] HTTP GET / responded 404 in 264.3715 ms
+2026-03-15 22:53:57.221 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/ - 404 0 null 831.4197ms
+2026-03-15 22:53:57.243 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:56635/, Response status code: 404
+2026-03-15 22:54:45.642 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/swagger - null null
+2026-03-15 22:54:45.694 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/swagger - 301 0 null 52.4472ms
+2026-03-15 22:54:45.711 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/swagger/index.html - null null
+2026-03-15 22:54:45.960 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/swagger/index.html - 200 null text/html;charset=utf-8 251.058ms
+2026-03-15 22:54:45.988 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/swagger/swagger-ui.css - null null
+2026-03-15 22:54:45.991 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/_vs/browserLink - null null
+2026-03-15 22:54:45.991 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-15 22:54:45.990 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-15 22:54:45.989 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/swagger/swagger-ui-bundle.js - null null
+2026-03-15 22:54:46.166 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 172.1998ms
+2026-03-15 22:54:46.222 -06:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-15 22:54:46.222 -06:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-15 22:54:46.243 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 253.9128ms
+2026-03-15 22:54:46.246 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/swagger/swagger-ui.css - 200 144929 text/css 257.5946ms
+2026-03-15 22:54:46.281 -06:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-15 22:54:46.291 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 302.5587ms
+2026-03-15 22:54:46.338 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/_vs/browserLink - 200 null text/javascript; charset=UTF-8 347.2013ms
+2026-03-15 22:54:46.494 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/swagger/v1/swagger.json - null null
+2026-03-15 22:54:46.539 -06:00 [INF] Request starting HTTP/2 GET https://localhost:56635/swagger/favicon-32x32.png - null null
+2026-03-15 22:54:46.556 -06:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-15 22:54:46.564 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/swagger/favicon-32x32.png - 200 628 image/png 24.434ms
+2026-03-15 22:54:47.074 -06:00 [INF] Request finished HTTP/2 GET https://localhost:56635/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 579.5199ms

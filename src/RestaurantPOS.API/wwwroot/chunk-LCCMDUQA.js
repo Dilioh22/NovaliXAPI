@@ -1,0 +1,1 @@
+import"./chunk-LGPK3X4Q.js";var n=[{path:"",loadComponent:()=>import("./chunk-7OQTRVM3.js").then(o=>o.CashierDashboardComponent)},{path:"session",loadComponent:()=>import("./chunk-V2WFTE6O.js").then(o=>o.CashSessionComponent)}];export{n as cashierRoutes};

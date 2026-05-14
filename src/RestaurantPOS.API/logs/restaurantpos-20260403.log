@@ -1,0 +1,51 @@
+2026-04-03 10:40:33.852 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-04-03 10:40:34.013 -06:00 [INF] CORS policy execution successful.
+2026-04-03 10:40:34.014 -06:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 1.1980 ms
+2026-04-03 10:40:34.014 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 163.6866ms
+2026-04-03 10:40:34.130 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-04-03 10:40:34.131 -06:00 [INF] CORS policy execution successful.
+2026-04-03 10:40:34.375 -06:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/4/2026 04:52:43', Current time (UTC): '3/4/2026 16:40:34'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-04-03 10:40:34.634 -06:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/4/2026 04:52:43', Current time (UTC): '3/4/2026 16:40:34'.
+2026-04-03 10:40:34.653 -06:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-03 10:40:34.861 -06:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-03 10:40:34.862 -06:00 [INF] HTTP POST /hubs/orders/negotiate responded 401 in 730.5418 ms
+2026-04-03 10:40:34.973 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 401 null null 842.7597ms
+2026-04-03 10:40:47.487 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-04-03 10:40:47.487 -06:00 [INF] CORS policy execution successful.
+2026-04-03 10:40:47.488 -06:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 0.3551 ms
+2026-04-03 10:40:47.488 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 1.4603ms
+2026-04-03 10:40:47.498 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-04-03 10:40:47.498 -06:00 [INF] CORS policy execution successful.
+2026-04-03 10:40:47.500 -06:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/4/2026 04:52:43', Current time (UTC): '3/4/2026 16:40:47'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-04-03 10:40:47.503 -06:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/4/2026 04:52:43', Current time (UTC): '3/4/2026 16:40:47'.
+2026-04-03 10:40:47.504 -06:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-03 10:40:47.505 -06:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-03 10:40:47.505 -06:00 [INF] HTTP POST /hubs/orders/negotiate responded 401 in 7.3944 ms
+2026-04-03 10:40:47.507 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 401 null null 9.5779ms
+2026-04-03 10:41:18.378 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null null
+2026-04-03 10:41:18.378 -06:00 [INF] CORS policy execution successful.
+2026-04-03 10:41:18.379 -06:00 [INF] HTTP OPTIONS /hubs/orders/negotiate responded 204 in 0.6473 ms
+2026-04-03 10:41:18.379 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 204 null null 1.6933ms
+2026-04-03 10:41:18.385 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - null 0
+2026-04-03 10:41:18.386 -06:00 [INF] CORS policy execution successful.
+2026-04-03 10:41:18.388 -06:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/4/2026 04:52:43', Current time (UTC): '3/4/2026 16:41:18'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-04-03 10:41:18.389 -06:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/4/2026 04:52:43', Current time (UTC): '3/4/2026 16:41:18'.
+2026-04-03 10:41:18.389 -06:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-03 10:41:18.389 -06:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-03 10:41:18.389 -06:00 [INF] HTTP POST /hubs/orders/negotiate responded 401 in 3.1656 ms
+2026-04-03 10:41:18.390 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44374/hubs/orders/negotiate?negotiateVersion=1 - 401 null null 4.6671ms

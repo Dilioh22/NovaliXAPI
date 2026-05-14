@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4E5F6A7-B8C9-0123-DEF0-234567890123}|src\\RestaurantPOS.API\\RestaurantPOS.API.csproj|c:\\sistemas\\restaurante\\restaurantpos\\src\\restaurantpos.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D4E5F6A7-B8C9-0123-DEF0-234567890123}|src\\RestaurantPOS.API\\RestaurantPOS.API.csproj|solutionrelative:src\\restaurantpos.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4E5F6A7-B8C9-0123-DEF0-234567890123}|src\\RestaurantPOS.API\\RestaurantPOS.API.csproj|c:\\sistemas\\restaurante\\restaurantpos\\src\\restaurantpos.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4E5F6A7-B8C9-0123-DEF0-234567890123}|src\\RestaurantPOS.API\\RestaurantPOS.API.csproj|solutionrelative:src\\restaurantpos.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|src\\RestaurantPOS.Application\\RestaurantPOS.Application.csproj|c:\\sistemas\\restaurante\\restaurantpos\\src\\restaurantpos.application\\dtos\\products\\categoryresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|src\\RestaurantPOS.Application\\RestaurantPOS.Application.csproj|solutionrelative:src\\restaurantpos.application\\dtos\\products\\categoryresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|src\\RestaurantPOS.Application\\RestaurantPOS.Application.csproj|c:\\sistemas\\restaurante\\restaurantpos\\src\\restaurantpos.application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|src\\RestaurantPOS.Application\\RestaurantPOS.Application.csproj|solutionrelative:src\\restaurantpos.application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|src\\RestaurantPOS.Application\\RestaurantPOS.Application.csproj|c:\\sistemas\\restaurante\\restaurantpos\\src\\restaurantpos.application\\common\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|src\\RestaurantPOS.Application\\RestaurantPOS.Application.csproj|solutionrelative:src\\restaurantpos.application\\common\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\RestaurantPOS.Domain\\RestaurantPOS.Domain.csproj|c:\\sistemas\\restaurante\\restaurantpos\\src\\restaurantpos.domain\\entities\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\RestaurantPOS.Domain\\RestaurantPOS.Domain.csproj|solutionrelative:src\\restaurantpos.domain\\entities\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryResponseDto.cs",
+              "DocumentMoniker": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.Application\\DTOs\\Products\\CategoryResponseDto.cs",
+              "RelativeDocumentMoniker": "src\\RestaurantPOS.Application\\DTOs\\Products\\CategoryResponseDto.cs",
+              "ToolTip": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.Application\\DTOs\\Products\\CategoryResponseDto.cs",
+              "RelativeToolTip": "src\\RestaurantPOS.Application\\DTOs\\Products\\CategoryResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T15:24:13.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "src\\RestaurantPOS.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "src\\RestaurantPOS.API\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAMwBcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T15:24:11.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.Application\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "src\\RestaurantPOS.Application\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.Application\\Services\\OrderService.cs",
+              "RelativeToolTip": "src\\RestaurantPOS.Application\\Services\\OrderService.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAAwB4BAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T04:32:39.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BusinessRuleException.cs",
+              "DocumentMoniker": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.Application\\Common\\Exceptions\\BusinessRuleException.cs",
+              "RelativeDocumentMoniker": "src\\RestaurantPOS.Application\\Common\\Exceptions\\BusinessRuleException.cs",
+              "ToolTip": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.Application\\Common\\Exceptions\\BusinessRuleException.cs",
+              "RelativeToolTip": "src\\RestaurantPOS.Application\\Common\\Exceptions\\BusinessRuleException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T04:32:24.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.Domain\\Entities\\AuditLog.cs",
+              "RelativeDocumentMoniker": "src\\RestaurantPOS.Domain\\Entities\\AuditLog.cs",
+              "ToolTip": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.Domain\\Entities\\AuditLog.cs",
+              "RelativeToolTip": "src\\RestaurantPOS.Domain\\Entities\\AuditLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T04:24:28.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\RestaurantPOS.API\\appsettings.json",
+              "ToolTip": "C:\\Sistemas\\Restaurante\\RestaurantPOS\\src\\RestaurantPOS.API\\appsettings.json",
+              "RelativeToolTip": "src\\RestaurantPOS.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-16T04:23:31.274Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

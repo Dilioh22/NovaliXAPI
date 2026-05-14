@@ -1,0 +1,1 @@
+import{_ as t}from"./chunk-DY4L5YQN.js";var o=(()=>{class r{transform(e){return e==null?"L 0.00":`L ${e.toFixed(2)}`}static{this.\u0275fac=function(i){return new(i||r)}}static{this.\u0275pipe=t({name:"posCurrency",type:r,pure:!0,standalone:!0})}}return r})();export{o as a};
