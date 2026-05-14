@@ -1,4 +1,6 @@
 {
   "$schema": "https://schema.railpack.com",
-  "provider": "Dotnet"
+  "provider": "Dotnet",
+  "rootDirectory": "src/RestaurantPOS.API",
+  "startCommand": "./out"
 }
